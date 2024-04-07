@@ -1,0 +1,61 @@
+---
+title: "KoboToolbox: basic training edition"
+author: "Derrick Theophille"
+format: html
+---
+
+# Welcome!
+Welcome to my little course in **KoboToolbox: basic training edition^(tm)^**
+
+<img src="kobotoolbox-logo-lrg.png" alt="KoboToolbox logo" width="700"/>
+
+# Get to know your trainer 
+
+<img style="float: left;" src="IMG-20201228-WA0004.jpg" alt="Derrick Theophille" width="250"/>
+
+**Derrick Theophille** is the Chief Fisheries Officer at the Fisheries Division, but for over fifteen years has worked as the Fisheries Officer responsible for resource assessment, fisheries statistics, and databases. His work with data earned him double awards in 2010 for Junior Public Officer of the Year and Public Officer of the Year and enabled his ministry to obtain second place at the United Nations Excellence in Public Service Awards in 2011 for the Latin America and Caribbean region. He holds a Master of Science degree in natural resource and environmental management.
+
+His relevant experience includes database development and management, data collection and surveys, data analysis, geospatial data analysis, data visualization, and reporting. He has worked to transition the data collection system of the Fisheries Division and Division of Agriculture to incorporate mobile data collection systems and the use of R for improving and streamlining data workflows.
+
+<img style="float: center;" src="derrick-crfm-r-training.jpg" alt="Derrick Theophille" height="500"/>
+
+Derrick is also a pioneer of advances in fisheries data within the Caribbean region. Currently, he heads the Caribbean Regional Fisheries Mechanism (CRFM) Data Methods and Training Working Group (DMTWG) and leads monthly sessions for fisheries counterparts across the region in R for fisheries statistics and stock assessments. He has shared much of his knowledge with his colleagues across the region and assisted with their data transformation progress.
+
+
+# What to expect?
+
+## Who is this course for?
+
+This course is for you if you are:
+
+- New to or curious about mobile data collection, KoboToolbox
+- Involved or interested in data collection and management
+
+## Are there any prerequisites?
+
+If you have some computing experience and willing to learn some more, you should be fine.
+
+## What will you learn?
+
+| **No.** | **Topic**                                                          | **Duration** |
+| ------ | ------------------------------------------------------------------ | --------------------------------- |
+| 1      | A comparison of paper-based and electronic field data collection   | 30 minutes                        |
+| 2      | An overview of the KoboToolbox ecosystem                           | 30 minutes                        |
+| 3      | Basics of surveys and questionnaire development                    | 30 minutes                        |
+| 4      | Building a basic e-form in KoboToolbox                             | 2 hours                           |
+| 5      | Getting your form onto a mobile device                             | 30 minutes                        |
+| 6      | Using a mobile device to capture data in the field using an e-form | 1 hour                            |
+| 7      | Viewing and accessing your data from the KoboToolbox repository    | 2 hours                           |
+|        | **Total estimated time**                                           | **7 hours**                       |
+
+## *How* will *we* learn?
+
+Yes! I expect to learn from you too! Your humble trainer does not know it all, no matter how smart you think he is!
+
+We will have:
+
+1. Lectures *(some knowledge shared from me to you)*
+2. Discussion *(some knowledge shared **between** me to you)*
+3. Hands-on exercises *(something to keep your hands busy for a bit)*
+4. Quizzes *(so we can see how much you've learned)*
+5. Maybe some *homework* *(so you don't forget what was said and done ...hopefully)* :)
