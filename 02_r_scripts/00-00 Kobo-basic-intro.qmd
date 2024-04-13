@@ -1,13 +1,40 @@
 ---
 title: "KoboToolbox: basic training edition"
 author: "Derrick Theophille"
-format: html
+date: last-modified
+date-format: "DD MMMM YYYY"
+
+format: 
+  html:
+    toc: true
+    number-sections: true
+    fig_caption: false
+
+execute: 
+  echo: true
+  message: false
+  warning: false
+  
+knitr: 
+  opts_chunk: 
+    comment: false
+    collapse: true
 ---
 
 # Welcome!
 Welcome to my little course in **KoboToolbox: basic training edition^(tm)^**
 
 <img src="kobotoolbox-logo-lrg.png" alt="KoboToolbox logo" width="700"/>
+
+# All about the data!
+
+**We all know that data is important**. Field data collection is a critical aspect of the work of many organizations, including government departments. As the need for *evidence-based* *decision-making* becomes more apparent and sought after by practitioners of good governance, so does the need for securing that data from primary sources, often in the field, rapidly, but reliably and accurately.
+
+Traditionally, paper-based data collection programmes were used to collect data in the field. However, the utility of this data is severely limited unless it is first computerized into a spreadsheet or database before any meaningful analysis can be carried out. 
+
+Alternatively, mobile data collection systems exist. This enables speedier data collection, built-in validation for data entered, and a streamlining of data workflows. One such tool which can be used for mobile data collection is **KoboToolbox**. Therefore, the opportunity exists to make data collection an easier proposition for departments which need it most as part of their work programmes.
+
+Unfortunately, the skills necessary to build electronic data collection forms in **KoboToolbox** may not be present within the existing workforce, nor the expertise to access the data from the repository for use. Additionally, the use of new technologies, including mobile data collection in the field, requires some level of familiarity to be truly effective and transformative to the workflow of the department. Hence the necessity for training.
 
 # Get to know your trainer 
 
@@ -55,7 +82,7 @@ Yes! I expect to learn from you too! Your humble trainer does not know it all, n
 We will have:
 
 1. Lectures *(some knowledge shared from me to you)*
-2. Discussion *(some knowledge shared **between** me to you)*
+2. Discussion *(some knowledge shared **between** me and you)*
 3. Hands-on exercises *(something to keep your hands busy for a bit)*
 4. Quizzes *(so we can see how much you've learned)*
 5. Maybe some *homework* *(so you don't forget what was said and done ...hopefully)* :)
