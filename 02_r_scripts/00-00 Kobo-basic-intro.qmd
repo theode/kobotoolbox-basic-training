@@ -1,5 +1,6 @@
 ---
-title: "KoboToolbox: basic training edition"
+title: "00: KoboToolbox: basic training edition"
+subtitle: "Introduction"
 author: "Derrick Theophille"
 date: last-modified
 date-format: "DD MMMM YYYY"
@@ -48,6 +49,10 @@ His relevant experience includes database development and management, data colle
 
 Derrick is also a pioneer of advances in fisheries data within the Caribbean region. Currently, he heads the Caribbean Regional Fisheries Mechanism (CRFM) Data Methods and Training Working Group (DMTWG) and leads monthly sessions for fisheries counterparts across the region in R for fisheries statistics and stock assessments. He has shared much of his knowledge with his colleagues across the region and assisted with their data transformation progress.
 
+# Data and You
+
+- Tell me about yourself and your relationship to data collection
+- Do you have any data collection experience?
 
 # What to expect?
 
@@ -60,20 +65,26 @@ This course is for you if you are:
 
 ## Are there any prerequisites?
 
-If you have some computing experience and willing to learn some more, you should be fine.
+*Should I be computer-literate?*
+
+- It certainly helps if you know how to use a computer or other similar device. If you have some computing experience and willing to learn some more, you should be fine.
+
+*What about computers or mobile devices?*
+
+- Forms can be developed, deployed, managed, used for data collection from a wide range of devices (computers, tablets, or smart phones) or operating systems (MacOS, Windows, Linux, Android). Do have a reliable device handy for the duration of the training and for use afterwards with your own data collection activities.
 
 ## What will you learn?
 
-| **No.** | **Topic**                                                          | **Duration** |
+| **No** | **Topic**                                                          | **Duration (best case scenario)** |
 | ------ | ------------------------------------------------------------------ | --------------------------------- |
 | 1      | A comparison of paper-based and electronic field data collection   | 30 minutes                        |
-| 2      | An overview of the KoboToolbox ecosystem                           | 30 minutes                        |
-| 3      | Basics of surveys and questionnaire development                    | 30 minutes                        |
+| 2      | Basics of surveys and questionnaire development                    | 30 minutes                        |
+| 3      | An overview of the KoboToolbox ecosystem                           | 30 minutes                        |
 | 4      | Building a basic e-form in KoboToolbox                             | 2 hours                           |
 | 5      | Getting your form onto a mobile device                             | 30 minutes                        |
 | 6      | Using a mobile device to capture data in the field using an e-form | 1 hour                            |
 | 7      | Viewing and accessing your data from the KoboToolbox repository    | 2 hours                           |
-|        | **Total estimated time**                                           | **7 hours**                       |
+|        | **Total estimated time**                                           | **7 hours**                       |               |
 
 ## *How* will *we* learn?
 

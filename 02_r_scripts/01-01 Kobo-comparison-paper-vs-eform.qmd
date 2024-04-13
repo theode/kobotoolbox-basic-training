@@ -1,0 +1,135 @@
+---
+title: "01-01: A comparison of paper-based and electronic field data collection systems"
+subtitle: "Paper-based data collection"
+author: "Derrick Theophille"
+date: last-modified
+date-format: "DD MMMM YYYY"
+
+format: 
+  html:
+    toc: true
+    number-sections: true
+    fig_caption: false
+
+execute: 
+  echo: true
+  message: false
+  warning: false
+  
+knitr: 
+  opts_chunk: 
+    comment: false
+    collapse: true
+---
+
+# What is data collection?
+This is the **systematic** process of **gathering information**, such as observations or measurements. This information can be gathered through digital or manual methods. 
+
+```{r}
+#| eval: FALSE
+#| echo: FALSE 
+
+sources
+
+# [^1]: https://www.surveycto.com/resources/guides/data-collection-methods-guide/
+# https://www.scribbr.com/methodology/data-collection/#:~:text=Data%20collection%20is%20a%20systematic%20process%20of%20gathering,knowledge%20and%20original%20insights%20into%20your%20research%20problem.
+```
+
+We usually mean **Primary Data Collection** when we speak of collecting the information directly or first-hand, straight from the source or in the field. This data is "raw" and never-before collected by anyone. 
+
+Examples of primary data: 
+
+- Measuring the length and weight of a fish which was just caught.
+- Interviewing someone during a household survey.
+- Filling in a questionnaire about your airport experience while awaiting your flight.
+
+**Secondary Data** involves the collation and use of data which was already collected from primary means and perhaps even processed.
+
+Examples of secondary data: 
+
+- Scientific journals, or other publications
+- Databases
+- Websites
+
+
+```{r}
+#| eval: false
+#| echo: false
+
+# From Co-pilot AI
+
+# Certainly! Let's explore the differences between **primary data** and **secondary data** in the context of research and statistical analysis:
+
+### Primary Data:
+# - **Definition**: Primary data refers to information that is **collected for the first time** by the researcher through direct efforts and personal experiences. It is also known as **raw data** or **first-hand information**.
+# - **Collection Process**:
+#     - Involves methods such as surveys, observations, experiments, mailed questionnaires, personal interviews, and focus groups.
+#     - Requires significant investment of time, resources, and human effort.
+#     - Investigator directly supervises and controls the data collection process.
+# - **Nature of Data**:
+#     - Raw materials in their original form.
+#     - More reliable and suitable for the specific research purpose.
+# - **Cost and Time**:
+#     - Collecting primary data is **expensive** both in terms of time and money.
+# 
+# ### Secondary Data:
+# - **Definition**: Secondary data refers to data that has **already been collected or produced by others** for purposes other than the current research problem.
+# - **Sources**:
+#     - Government publications, censuses, internal records of organizations, books, journal articles, websites, and reports.
+# - **Advantages**:
+#     - **Economical**: Saves time and cost for the researcher.
+#     - **Readily Available**: Accessible from existing sources.
+# - **Disadvantages**:
+#     - May not perfectly match the current research purpose.
+#     - Accuracy and relevance can vary.
+# - **Nature of Data**:
+#     - In a refined form (already processed).
+# - **Cost and Time**:
+#     - Requires **less time and money**.
+# 
+# In summary, primary data is original and specific to the researcher's needs, while secondary data is an analysis and interpretation of existing data collected by others. Both types have their own advantages and limitations. 📊🔍
+# 
+# Source: Conversation with Bing, 4/13/2024
+# (1) Difference Between Primary Data And Secondary Data - BYJU'S. https://byjus.com/commerce/difference-between-primary-data-and-secondary-data/.
+# (2) Difference Between Primary and Secondary Data. https://keydifferences.com/difference-between-primary-and-secondary-data.html.
+# (3) Data Collection Methods: Primary Vs. Secondary Methods. https://surveypoint.ai/blog/2023/01/18/data-collection-methods-primary-vs-secondary-methods/.
+# (4) Primary vs. Secondary Data: A Comparative Analysis. https://visfu.com/primary-vs-secondary-data/.
+# (5) Primary Data & Secondary Data: Definition & Example. https://www.statisticshowto.com/experimental-design/primary-data-secondary/.
+```
+
+## Why collect data?
+
+
+
+
+# What is "Paper-based" data collection?
+
+Essentially, this is any data collection method which involves the capture of data on to paper medium using a writing implement. In other words, and very, very simply: **writing observations on paper**.
+
+# How do "Paper-based" data collection systems typically work?
+
+## Preporatory phase (pre-data collection)
+1. You or your department have some data to collect, for some reason. 
+2. A questionnaire is developed by a researcher, survey team, or similar. 
+3. The questionnaire is then printed on to paper. Sometimes this is called a form.
+
+::: {.callout-note}
+The survey development process will be discussed a bit later.
+:::
+
+
+## The data collection phase
+
+1. The forms are distributed to enumerators (data collectors) or respondents. This is how the questionnaire is administered and observations are recorded, documenting interactions or activity.
+2. The completed forms are then collected from the enumerators and compiled.
+
+And voila! You have collected data! What next?
+
+## Digitization and beyond (post-data collection)
+
+1. Data entry or digitization commences, translating analogue ("paper") data into digital data. The observations on the paper forms are typed into a computer, usually on to a spreadsheet (perhaps Microsoft Excel) or into a database.
+2. Data preparation. This can involve cleaning, edits or corrections, 
+
+::: {.callout-important}
+Applications such as Microsoft Word are not suitable replacements for spreadsheets or databases! Yes, your information is digitized, but it is not readily useful for much else in that format. And yes, I do know MS Word has some rudimentary features built in which handles calculation and such.
+:::

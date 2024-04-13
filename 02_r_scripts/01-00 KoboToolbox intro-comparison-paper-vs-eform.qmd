@@ -1,0 +1,28 @@
+---
+title: "01-00: A comparison of paper-based and electronic field data collection"
+subtitle: "A quick overview"
+author: "Derrick Theophille"
+date: last-modified
+date-format: "DD MMMM YYYY"
+
+format: 
+  html:
+    toc: true
+    number-sections: true
+    fig_caption: false
+
+execute: 
+  echo: true
+  message: false
+  warning: false
+  
+knitr: 
+  opts_chunk: 
+    comment: false
+    collapse: true
+---
+
+# Tell me about yourself and your relationship to data collection
+
+Do you have any data collection experience?
+
