@@ -1,0 +1,68 @@
+---
+title: "03-01: An overview of the KoboToolbox ecosystem"
+author: "Derrick Theophille"
+date: last-modified
+date-format: "DD MMMM YYYY"
+
+format: 
+  html:
+    toc: true
+    number-sections: true
+    fig_caption: false
+
+execute: 
+  echo: true
+  message: false
+  warning: false
+  
+knitr: 
+  opts_chunk: 
+    comment: false
+    collapse: true
+---
+
+# What is KoboToolbox?
+
+- KoboToolbox is a suite of applications providing an open source data collection tool for working in **"challenging"** environments. 
+- It is designed to address many of the shortcomings of mobile data collection. 
+- KoboToolbox lends reliability, accuracy, speed, data quality, analysis and cost effectiveness to mobile data collection.
+- KoboToolbox was developed by the Harvard Humanitarian Initiative in association with Brigham and Women’s Hospital and USAID.
+- Works for data collection **offline** or **online** on virtually any device.
+- Its main features are free to use.
+
+[image of the KoboToolbox web page]
+
+# KoboToolbox Features
+
+## Web Form Builder
+
+- Allows for the designing of very basic to fairly complex electronic forms or questionnaires. 
+- Has 25 quantitative and qualitative question types to choose from (text, numeric, date and time, single- or multi-select, ranges, audio, video, geospatial, and much more).
+- Many useful features can be included in forms to ensure high quality data is collected efficiently, such as skip logic, validation, and even language translation.
+- 
+
+## Question Library
+
+- Saves questions as templates which can be reused in future forms.
+- 
+
+## Data collection via mobile app or Web browser
+
+- Allows data to be collected online or offline
+- 
+
+## Data Repository: Management and Reporting
+
+- 
+
+
+
+# The KoboToolbox Workflow
+
+- 
+
+
+
+::: {.callout-important}
+sample text
+:::
