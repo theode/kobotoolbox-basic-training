@@ -99,7 +99,8 @@ Examples of secondary data:
 
 ## Why collect data?
 
-
+1. To gather information about something
+2. 
 
 
 # What is "Paper-based" data collection?
