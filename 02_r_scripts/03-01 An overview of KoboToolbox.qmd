@@ -23,11 +23,20 @@ knitr:
 
 # What is KoboToolbox?
 
+```{r}
+# some-sources
+
+# https://support.kobotoolbox.org/welcome.html
+
+```
+
+
 - KoboToolbox is a suite of applications providing an open source data collection tool for working in **"challenging"** environments. 
 - It is designed to address many of the shortcomings of mobile data collection. 
 - KoboToolbox lends reliability, accuracy, speed, data quality, analysis and cost effectiveness to mobile data collection.
 - KoboToolbox was developed by the Harvard Humanitarian Initiative in association with Brigham and Women’s Hospital and USAID.
 - Works for data collection **offline** or **online** on virtually any device.
+- It is useful for much more than data collection. It can also be used for managing and visualizing collected data.
 - Its main features are free to use.
 
 [image of the KoboToolbox web page]
