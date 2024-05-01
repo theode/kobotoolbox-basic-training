@@ -1,6 +1,5 @@
 ---
-title: "01-01: A comparison of paper-based and electronic field data collection systems"
-subtitle: "Paper-based data collection"
+title: "01: A comparison of paper-based and electronic field data collection systems"
 author: "Derrick Theophille"
 date: last-modified
 date-format: "DD MMMM YYYY"
@@ -21,6 +20,24 @@ knitr:
     comment: false
     collapse: true
 ---
+
+```{r}
+#| label: required-libraries
+#| echo: false
+
+library(tidyverse)
+library(readxl)
+library(here)
+library(knitr)
+```
+
+```{r}
+#| label: some-settings
+#| echo: false
+
+options(knitr.kable.NA = '')
+```
+
 
 # What is data collection?
 This is the **systematic** process of **gathering information**, such as observations or measurements. This information can be gathered through digital or manual methods. 
@@ -99,17 +116,27 @@ Examples of secondary data:
 
 ## Why collect data?
 
-1. To gather information about something
-2. 
+**We usually have a need to collect data so we can gather information about something or someone so as to better understand it.** In practice this can mean several things based on the sector within which the activity is done. 
 
+In the case of fisheries, we primarily collect data **to better manage our scarce marine resources**. So we need to have an idea of how many fish are in our waters, what type, what other fish are eating them, how many fishing boats are targeting them and how much of that fish is landed. These bits of data are sometimes called **indicators**. 
 
-# What is "Paper-based" data collection?
+In fisheries management we manage our natural resources not by directly managing the living creatures (i.e. fish), but by managing the people who utilize those natural resources. The knowledge needed is derived almost exclusively from fishers or fisheries scientists on or underneath the waves.
+
+[ add pic of fisher with fish on his boat ]
+
+However, one can ask "***why*** do we need to better manage those scarce marine resources", and continue asking follow-up questions all the way up to the higher level of societal needs and ideals. 
+
+**Generally data collection is a key step in evidence-based decision-making.** I'm sure we all can agree that it is better to be informed when deciding on matters than not informed. The better informed we are when deciding, the better the available decision options. **This can lead to less wastage of organisational and societal resources (work force, finances, and material or supplies)** as the decisions will better fit the specific scenario when sufficient information is on hand to support that decision-making process.
+
+# Paper-based data collection
+
+## What is "paper-based" data collection?
 
 Essentially, this is any data collection method which involves the capture of data on to paper medium using a writing implement. In other words, and very, very simply: **writing observations on paper**.
 
-# How do "Paper-based" data collection systems typically work?
+## How do "Paper-based" data collection systems typically work?
 
-## Preporatory phase (pre-data collection)
+### Preporatory phase (pre-data collection)
 1. You or your department have some data to collect, for some reason. 
 2. A questionnaire is developed by a researcher, survey team, or similar. 
 3. The questionnaire is then printed on to paper. Sometimes this is called a form.
@@ -118,19 +145,80 @@ Essentially, this is any data collection method which involves the capture of da
 The survey development process will be discussed a bit later.
 :::
 
-
-## The data collection phase
+### The data collection phase
 
 1. The forms are distributed to enumerators (data collectors) or respondents. This is how the questionnaire is administered and observations are recorded, documenting interactions or activity.
-2. The completed forms are then collected from the enumerators and compiled.
+2. The completed forms are then collected from the enumerators and compiled at data collection headquarters (HQ) or sub-regional offices before sent on to the HQ.
 
-And voila! You have collected data! What next?
+And voila! You have collected data! Now what? Recall we discussed decision-making earlier. **How do we take those individual records and make that into palatable information for use in decision-making?**
 
-## Digitization and beyond (post-data collection)
+### Digitization and beyond (post-data collection)
 
-1. Data entry or digitization commences, translating analogue ("paper") data into digital data. The observations on the paper forms are typed into a computer, usually on to a spreadsheet (perhaps Microsoft Excel) or into a database.
-2. Data preparation. This can involve cleaning, edits or corrections, 
+1. Data entry or digitization commences, translating analogue ("paper") data into digital data. The observations on the paper forms are manually typed into a computer, usually on to a spreadsheet (perhaps Microsoft Excel) or into a database.
+2. Data preparation. This can involve cleaning, edits or corrections, followed by any preliminary analyses which can lead to insights derived from the data.
+3. Lastly, those insights are summarized and converted into text or visualized, either as tables or plots (graphs and maps of several kinds), which feed into a report which can be useful for decision-making.
 
 ::: {.callout-important}
 Applications such as Microsoft Word are not suitable replacements for spreadsheets or databases! Yes, your information is digitized, but it is not readily useful for much else in that format. And yes, I do know MS Word has some rudimentary features built in which handles calculation and such.
+
+Data can be stored as text files, though. Comma-Separated Value (CSV) files commonly used in the data world to store data in plain text, without the *bells and whistles* which applications such as MS Excel adds to the data contained within its files.
 :::
+
+## Pros and cons of "paper-basesd" data collection
+
+We will need to know the pros and cons of this approach to data collection.
+
+```{r}
+#| label: pros-cons-paper
+#| echo: false
+
+kable(read_xlsx(here("00_raw_data", "comaprison-paper-vs-electronic-data-collection.xlsx"), sheet = "paper-based"))
+
+```
+
+
+# Electronic data collection
+
+## What is "electronic" data collection?
+
+The advancement and ubiquity of technology in our daily lives has allowed previously unthinkable means of data collection to be a reality and become ever more feasible. Smart devices (eg. phones, tablets) are everywhere, making our lives better with their capabilities. The near seamless connectivity of smart devices encourages greater mobility and allows even more utility within our modern world. 
+
+Smart mobile devices are pretty common, aren't they? We use them for making calls, playing music, catching up on the news or social media, or playing our favorite game while on the go. Why not also use them for data collection? Why not collect our data with the use of electronic devices? 
+
+[ pic of mobile phone or tablet with KoboToolbox on the screen]
+
+**Electronic data collection is the use of electronic devices for data collection.** This is sometimes termed *mobile data collection*. 
+
+## How do "electronic" data collection systems typically work?
+
+### Preporatory phase (pre-data collection)
+1. You or your department have some data to collect, for some reason. 
+2. A questionnaire is developed by a researcher, survey team, or similar. 
+3. The questionnaire is then digitized, converted into an electronic form or **e-form**.
+
+### The data collection phase
+
+1. The e-forms are deployed to enumerators (data collectors) or respondents by electronic means, usually via the internet or other network connection. This is how the questionnaire is administered and observations are recorded, documenting interactions or activity.
+2. The completed forms are then electronically submitted by the enumerator or respondent back to data collection headquarters. In the case where the form is not connected to any network, a physical connection may be required to download the data from the device. In any case the data is already in an electronic state and easily transferable to HQ for collation and processing.
+
+### Digitization and beyond (post-data collection)
+
+1. Electronic data is digitized at the time of collection! So no further digitizing is necessary. In most cases the data is automatically collated after submission or transferred directly into a database. This is usually done in near real-time.
+2. Data preparation. This can involve cleaning, edits or corrections, followed by any preliminary analyses which can lead to insights derived from the data.
+3. Lastly, those insights are summarized and converted into text or visualized, either as tables or plots (graphs and maps of several kinds), which feed into a report which can be useful for decision-making.
+
+::: {.callout-note}
+Perhaps in a future course I can teach you how to automate steps 2 and 3 above. :)
+:::
+
+## Pros and cons of "electronic" data collection
+
+We will need to know the pros and cons of this approach to data collection.
+
+```{r}
+#| label: pros-cons-electronic
+#| echo: false
+
+kable(read_xlsx(here("00_raw_data", "comaprison-paper-vs-electronic-data-collection.xlsx"), sheet = "electronic"))
+
+```

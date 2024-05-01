@@ -94,6 +94,6 @@ We will have:
 
 1. Lectures *(some knowledge shared from me to you)*
 2. Discussion *(some knowledge shared **between** me and you)*
-3. Hands-on exercises *(something to keep your hands busy for a bit)*
+3. Hands-on practical exercises *(something to keep your hands busy for a bit)*
 4. Quizzes *(so we can see how much you've learned)*
 5. Maybe some *homework* *(so you don't forget what was said and done ...hopefully)* :)

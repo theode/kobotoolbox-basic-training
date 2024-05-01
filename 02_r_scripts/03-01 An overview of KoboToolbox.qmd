@@ -1,5 +1,5 @@
 ---
-title: "03-01: An overview of the KoboToolbox ecosystem"
+title: "03: An overview of the KoboToolbox ecosystem"
 author: "Derrick Theophille"
 date: last-modified
 date-format: "DD MMMM YYYY"
@@ -24,54 +24,108 @@ knitr:
 # What is KoboToolbox?
 
 ```{r}
+#| label: sources-01
+#| echo: false
+
 # some-sources
 
 # https://support.kobotoolbox.org/welcome.html
 
 ```
 
+<img src="KoBoToolbox-main-webpage.png" alt="KoboToolbox webpage" width="700"/>
 
-- KoboToolbox is a suite of applications providing an open source data collection tool for working in **"challenging"** environments. 
-- It is designed to address many of the shortcomings of mobile data collection. 
+- KoboToolbox is a suite of applications providing an open source data collection tool for working in **"challenging"** environments, such as humanitarian and human rights, global development, and environmental protection cases. But it is not limited to only these areas.
+- It is designed to address many of the shortcomings of mobile data collection.
 - KoboToolbox lends reliability, accuracy, speed, data quality, analysis and cost effectiveness to mobile data collection.
-- KoboToolbox was developed by the Harvard Humanitarian Initiative in association with Brigham and Women’s Hospital and USAID.
 - Works for data collection **offline** or **online** on virtually any device.
 - It is useful for much more than data collection. It can also be used for managing and visualizing collected data.
 - Its main features are free to use.
 
-[image of the KoboToolbox web page]
+
+You can visit the main webpage here: <https://www.kobotoolbox.org>
+
+## Some background to KoboToolbox
+
+- KoboToolbox was developed by the **Harvard Humanitarian Initiative** in association with Brigham and Women’s Hospital and USAID.
+- KoboToolbox is hosted and maintained by an international nonprofit organisation called **Kobo**, registered in Cambridge Massachusetts, United States. This organisation was established in 2019 to ensure that KoboToolbox could be maintained sustainably for the long-term and develop further.
+- Other partners include the United Nations Refugee Agency (UNHCR) and the United Nations Office for the Coordination of Humanitarian Affairs (UN OCHA).
+- KoboToolbox is being used by **>14,000** organisations around the world. This includes 
+  - the International Office for Migration (IOM), 
+  - Médecins Sans Frontières (MSF), 
+  - the International Federation of Red Cross and Red Crescent Societies (IFRC), 
+  - the United Nations Children's Fund (UNICEF), 
+  - Save the Children, 
+  - the African Development Bank, 
+  - the World Bank Group, 
+  - the German Agency for International Cooperation (GIZ), 
+  - Education Above All, 
+  - the United Nations Educational, Scientific and Cultural Organization (UNESCO), 
+  - the World Food Programme (WFP), 
+  - the UN Food and Agriculture Organisation (FAO),
+  - and the Joint Data Center on Forced Displacement (JDC).
+
+## Is KoboToolbox used by other agencies closer to home?
+
+- University of the West Indies
+- Barbados Fisheries Division
+- Suriname Fisheries Department
+- Saint Lucia Fisheries Department
+
+## Is KoboToolbox used nationally (in Dominica)?
+
+- Fisheries Division
+- Division of Agriculture
+- Dominica Emergency Agriculture Livelihoods Climate Resilience Project (EALCRP)
+- Information Communication Technology Unit (ICTU)
+- *Physical Planning*
+- *Environmental Health*
+- Other?
+
 
 # KoboToolbox Features
 
-## Web Form Builder
+## Web Formbuilder
 
-- Allows for the designing of very basic to fairly complex electronic forms or questionnaires. 
-- Has 25 quantitative and qualitative question types to choose from (text, numeric, date and time, single- or multi-select, ranges, audio, video, geospatial, and much more).
-- Many useful features can be included in forms to ensure high quality data is collected efficiently, such as skip logic, validation, and even language translation.
-- 
+- Allows for the designing of very basic to fairly complex and intuitive and *powerful* electronic forms or questionnaires.
+- Has 25 quantitative and qualitative question types to choose from:
+  - text (short or long/memo), 
+  - numeric (integer or decimal), 
+  - date and time, 
+  - single- or multi-select, 
+  - ranges, 
+  - ranks,
+  - images or photos,
+  - audio, 
+  - video, 
+  - geospatial (points, traces or lines, shapes),
+  - barcodes,
+  - calculations,
+  - and much more.
+- Many useful features can be included in forms to ensure high quality data is collected efficiently, such as
+ - skip logic, 
+ - validation, 
+ - and even language translation.
+-   
 
 ## Question Library
 
-- Saves questions as templates which can be reused in future forms.
-- 
+-   Saves questions as templates which can be reused in future forms.
+-   
 
 ## Data collection via mobile app or Web browser
 
-- Allows data to be collected online or offline
-- 
+-   Allows data to be collected online or offline
+-   
 
 ## Data Repository: Management and Reporting
 
-- 
-
-
+-   
 
 # The KoboToolbox Workflow
 
-- 
+-   
 
-
-
-::: {.callout-important}
+::: callout-important
 sample text
 :::
