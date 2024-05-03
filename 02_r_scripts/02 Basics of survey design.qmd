@@ -1,0 +1,24 @@
+---
+title: "02 Basics of survey design"
+author: "Derrick Theophille"
+date: last-modified
+date-format: "DD MMMM YYYY"
+
+format: 
+  html:
+    toc: true
+    number-sections: true
+    fig_caption: false
+
+execute: 
+  echo: true
+  message: false
+  warning: false
+  
+knitr: 
+  opts_chunk: 
+    comment: false
+    collapse: true
+---
+
+#
