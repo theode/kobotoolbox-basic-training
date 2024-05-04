@@ -9,7 +9,7 @@
 <meta name="author" content="Derrick Theophille">
 <meta name="dcterms.date" content="2024-05-04">
 
-<title>03: An overview of the KoboToolbox ecosystem</title>
+<title>02: Basics of survey design and questionnaire development</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,16 +25,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="03-01 An overview of KoboToolbox_files/libs/clipboard/clipboard.min.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/quarto.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/popper.min.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/anchor.min.js"></script>
-<link href="03-01 An overview of KoboToolbox_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="03-01 An overview of KoboToolbox_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="03-01 An overview of KoboToolbox_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="03-01 An overview of KoboToolbox_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="03-01 An overview of KoboToolbox_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="02 Basics of survey design_files/libs/clipboard/clipboard.min.js"></script>
+<script src="02 Basics of survey design_files/libs/quarto-html/quarto.js"></script>
+<script src="02 Basics of survey design_files/libs/quarto-html/popper.min.js"></script>
+<script src="02 Basics of survey design_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="02 Basics of survey design_files/libs/quarto-html/anchor.min.js"></script>
+<link href="02 Basics of survey design_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="02 Basics of survey design_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="02 Basics of survey design_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="02 Basics of survey design_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="02 Basics of survey design_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -47,21 +47,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-kobotoolbox" id="toc-what-is-kobotoolbox" class="nav-link active" data-scroll-target="#what-is-kobotoolbox"><span class="header-section-number">1</span> What is KoboToolbox?</a>
+  <li><a href="#surveys" id="toc-surveys" class="nav-link active" data-scroll-target="#surveys"><span class="header-section-number">1</span> Surveys</a>
   <ul class="collapse">
-  <li><a href="#some-background-to-kobotoolbox" id="toc-some-background-to-kobotoolbox" class="nav-link" data-scroll-target="#some-background-to-kobotoolbox"><span class="header-section-number">1.1</span> Some background to KoboToolbox</a></li>
-  <li><a href="#is-kobotoolbox-used-by-other-agencies-closer-to-home" id="toc-is-kobotoolbox-used-by-other-agencies-closer-to-home" class="nav-link" data-scroll-target="#is-kobotoolbox-used-by-other-agencies-closer-to-home"><span class="header-section-number">1.2</span> Is KoboToolbox used by other agencies closer to home?</a></li>
-  <li><a href="#is-kobotoolbox-used-in-dominica" id="toc-is-kobotoolbox-used-in-dominica" class="nav-link" data-scroll-target="#is-kobotoolbox-used-in-dominica"><span class="header-section-number">1.3</span> Is KoboToolbox used in Dominica?</a></li>
-  </ul></li>
-  <li><a href="#kobotoolbox-features" id="toc-kobotoolbox-features" class="nav-link" data-scroll-target="#kobotoolbox-features"><span class="header-section-number">2</span> KoboToolbox Features</a>
+  <li><a href="#what-is-a-survey" id="toc-what-is-a-survey" class="nav-link" data-scroll-target="#what-is-a-survey"><span class="header-section-number">1.1</span> What is a survey?</a></li>
+  <li><a href="#considerations-for-designing-a-survey" id="toc-considerations-for-designing-a-survey" class="nav-link" data-scroll-target="#considerations-for-designing-a-survey"><span class="header-section-number">1.2</span> Considerations for designing a survey</a>
   <ul class="collapse">
-  <li><a href="#web-formbuilder" id="toc-web-formbuilder" class="nav-link" data-scroll-target="#web-formbuilder"><span class="header-section-number">2.1</span> Web Formbuilder</a></li>
-  <li><a href="#question-library" id="toc-question-library" class="nav-link" data-scroll-target="#question-library"><span class="header-section-number">2.2</span> Question Library</a></li>
-  <li><a href="#data-collection-via-mobile-app-or-web-browser" id="toc-data-collection-via-mobile-app-or-web-browser" class="nav-link" data-scroll-target="#data-collection-via-mobile-app-or-web-browser"><span class="header-section-number">2.3</span> Data collection via mobile app or Web browser</a></li>
-  <li><a href="#data-repository-management-and-reporting" id="toc-data-repository-management-and-reporting" class="nav-link" data-scroll-target="#data-repository-management-and-reporting"><span class="header-section-number">2.4</span> Data Repository: Management and Reporting</a></li>
-  <li><a href="#project-survey-management" id="toc-project-survey-management" class="nav-link" data-scroll-target="#project-survey-management"><span class="header-section-number">2.5</span> Project (survey) management</a></li>
+  <li><a href="#primary-and-secondary" id="toc-primary-and-secondary" class="nav-link" data-scroll-target="#primary-and-secondary"><span class="header-section-number">1.2.1</span> Primary and Secondary?</a></li>
+  <li><a href="#the-why" id="toc-the-why" class="nav-link" data-scroll-target="#the-why"><span class="header-section-number">1.2.2</span> The <em>Why</em></a></li>
+  <li><a href="#anything-else" id="toc-anything-else" class="nav-link" data-scroll-target="#anything-else"><span class="header-section-number">1.2.3</span> Anything else?</a></li>
   </ul></li>
-  <li><a href="#the-kobotoolbox-workflow" id="toc-the-kobotoolbox-workflow" class="nav-link" data-scroll-target="#the-kobotoolbox-workflow"><span class="header-section-number">3</span> The KoboToolbox Workflow</a></li>
+  </ul></li>
+  <li><a href="#questionnaires" id="toc-questionnaires" class="nav-link" data-scroll-target="#questionnaires"><span class="header-section-number">2</span> Questionnaires</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-questionnaire" id="toc-what-is-a-questionnaire" class="nav-link" data-scroll-target="#what-is-a-questionnaire"><span class="header-section-number">2.1</span> What is a questionnaire?</a></li>
+  <li><a href="#types-of-questionnaires" id="toc-types-of-questionnaires" class="nav-link" data-scroll-target="#types-of-questionnaires"><span class="header-section-number">2.2</span> Types of questionnaires</a></li>
+  <li><a href="#considerations-for-developing-a-questionnaire" id="toc-considerations-for-developing-a-questionnaire" class="nav-link" data-scroll-target="#considerations-for-developing-a-questionnaire"><span class="header-section-number">2.3</span> Considerations for developing a questionnaire</a></li>
+  </ul></li>
+  <li><a href="#question-review-and-pilot-testing" id="toc-question-review-and-pilot-testing" class="nav-link" data-scroll-target="#question-review-and-pilot-testing"><span class="header-section-number">3</span> Question review and pilot-testing</a></li>
   </ul>
 </nav>
 </div>
@@ -69,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">03: An overview of the KoboToolbox ecosystem</h1>
+<h1 class="title">02: Basics of survey design and questionnaire development</h1>
 </div>
 
 
@@ -98,126 +100,123 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-is-kobotoolbox" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> What is KoboToolbox?</h1>
-<p><img src="KoBoToolbox-main-webpage.png" alt="KoboToolbox webpage" width="700"></p>
+<section id="surveys" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Surveys</h1>
+<section id="what-is-a-survey" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="what-is-a-survey"><span class="header-section-number">1.1</span> What is a survey?</h2>
+<p>A survey can be defined as <strong>data collection where a portion of a population may be interviewed or sampled, using using specific, standard questions</strong>. The aim is usually <strong>to understand the population as whole</strong>. This is primary data collection.</p>
+<p>A survey is usually administered in three main ways:</p>
+<ol type="1">
+<li>Face-to-face (in-person)</li>
+<li>Over the phone (remote)</li>
+<li>Self-administered</li>
+</ol>
+<p>Beyond this, the survey can involve traditional paper-based tools or more modern and electronic approaches. The methods employed beyond these can vary, based on several factors, such as the population to be studied and their geographic distribution, the resources available for conducting the survey, the amount of time available, and the types of questions to be asked and answered.</p>
+<p>A survey can also vary in duration. <strong>Research surveys</strong>, for example usually have a short, defined period, after which the survey is ended. <strong>Monitoring surveys</strong> are longer or on-going indefinitely. A college student conducting a survey for their final paper will be doing research. An Agricultural Officer documenting crop establishments of her farmers is conducting a monitoring exercise. Both of these are surveys, but, as you might imagine, they are administered quite differently.</p>
+<p>Herein is the crux of this section: <strong>Surveys and questionnaires may seem like pretty simple things to design and administer, however, there is plenty of room for misunderstandings and frustration to plague your survey exercise and derived results.</strong></p>
+</section>
+<section id="considerations-for-designing-a-survey" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="considerations-for-designing-a-survey"><span class="header-section-number">1.2</span> Considerations for designing a survey</h2>
+<section id="primary-and-secondary" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="primary-and-secondary"><span class="header-section-number">1.2.1</span> Primary and Secondary?</h3>
+<p>We’ve already discussed data sources, meaning primary and secondary data. This is the initial consideration when surveys are being designed. <strong>After all, the data you intend to gather may already exist!</strong> This can be beneficial as it may mean that your data collection activity might <em>simply</em> be a <strong>desk research</strong> exercise, collating and analyzing already existing data. It may also be beneficial if some of the already-existing data will not need to be collected by you, hence reducing the length and duration of your survey questionnaire. This will especially be the case if the secondary data is still “fresh” and relevant to the current survey goals.</p>
+</section>
+<section id="the-why" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="the-why"><span class="header-section-number">1.2.2</span> The <em>Why</em></h3>
+<p>This leads us to having an understanding of the purpose of your survey. To an extent, this was also discussed previously. We might know why we need to collect some portion of data, but do we understand what the survey intends to accomplish? It is good to document the survey purpose so when the survey exercise is completed you may know whether you have accomplished what you set out to do from the beginning. Similarly, for ongoing surveys, we can have a means to verify that we are meeting our survey objectives.</p>
+<p>In the case of the Fisheries Division’s <em>Fish Catch and Effort data collection programme</em>, an ongoing monitoring programme, our survey purpose is to <strong>account for and document fish landed (fish catch) and fishing activity (effort) at selected landing sites around Dominica for a given day</strong>.</p>
+<p>With research surveys, we may need to define our research objectives at this point. This can be as simple as stating what we hope to achieve from the collected data.</p>
+</section>
+<section id="anything-else" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="anything-else"><span class="header-section-number">1.2.3</span> Anything else?</h3>
+<p>Of course, there is a lot more to consider where surveys are concerned. This includes the population and sample size, questionnaire type and questions, tool for data gathering, whether enumerators will be required, and how many (and at what rate of pay), and how much time and money are available for the survey.</p>
+<p><strong>All considerations help us in planning and tailoring the survey and its questions to fit that specific scenario while achieving the desired results.</strong> Ultimately, we should seek to have our survey support decision-making.</p>
+</section>
+</section>
+</section>
+<section id="questionnaires" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Questionnaires</h1>
+<section id="what-is-a-questionnaire" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="what-is-a-questionnaire"><span class="header-section-number">2.1</span> What is a questionnaire?</h2>
+<p><strong>A questionnaire is a survey tool consisting of a list of questions or prompts designed to gather data on a survey subject or respondent.</strong> Questionnaires are a standardized means of collecting data towards meeting a survey objective. This is the heart of your survey.</p>
+<p>In preparation for this section, I learned that questionnaires may have originated, like most things in our modern world, from the ancient Greeks, who used questionnaires to gauge public opinion on a matter. Of course, questionnaires have applications in business (market research), academia, health care, and even government.</p>
+</section>
+<section id="types-of-questionnaires" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="types-of-questionnaires"><span class="header-section-number">2.2</span> Types of questionnaires</h2>
+<p>Questionnaires come in many flavors. Broadly, these can include:</p>
+<ol type="1">
+<li><strong>Structured and close-ended</strong>: The questions are usually closed-ended in a fixed format with predetermined response options. The respondent can only respond with the pre-determined options presented by the enumerator. Allows for the capture of quantitative data.</li>
+<li><strong>Unstructured and open-ended</strong>: The questions are open-ended, not in a fixed format and are not pre-determined. The respondent is encouraged to respond in their own words. Provides a lot of insight into the opinions an attitudes of the respondent, more difficult to analyse and summarize. Allows for the capture of qualitative data.</li>
+<li><strong>Mixed</strong>: This questionnaire has both open- and closed-ended questions. This allows for more flexibility in the responses received as both quantitative and qualitative data may be captured simultaneously.</li>
+</ol>
+</section>
+<section id="considerations-for-developing-a-questionnaire" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="considerations-for-developing-a-questionnaire"><span class="header-section-number">2.3</span> Considerations for developing a questionnaire</h2>
+<p>Before proceeding with questionnaire writing we should do the following:</p>
 <ul>
-<li>KoboToolbox is a suite of applications providing an open source data collection tool for working in <strong>“challenging”</strong> environments, such as humanitarian and human rights, global development, and environmental protection cases. But it is not limited to only these areas.</li>
-<li>It is designed to address many of the shortcomings of mobile data collection.</li>
-<li>KoboToolbox lends reliability, accuracy, speed, data quality, analysis and cost effectiveness to mobile data collection.</li>
-<li>Works for data collection <strong>offline</strong> or <strong>online</strong> on virtually any device.</li>
-<li>It is useful for much more than data collection. It can also be used for managing and visualizing collected data.</li>
-<li>Its main features are free to use.</li>
+<li>Determine what information you need to know.</li>
+<li>Have some idea how the data to be collected can be analysed.</li>
+<li>Categorize and organize the data you plan to collect with your questionnaire.</li>
 </ul>
-<p>You can visit the main webpage here: <a href="https://www.kobotoolbox.org" class="uri">https://www.kobotoolbox.org</a></p>
-<section id="some-background-to-kobotoolbox" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="some-background-to-kobotoolbox"><span class="header-section-number">1.1</span> Some background to KoboToolbox</h2>
+<p>Concerning questionnaire structure, consider the following:</p>
 <ul>
-<li>KoboToolbox was developed by the <strong>Harvard Humanitarian Initiative</strong> in association with Brigham and Women’s Hospital and USAID.</li>
-<li>KoboToolbox is hosted and maintained by an international nonprofit organisation called <strong>Kobo</strong>, registered in Cambridge Massachusetts, United States. This organisation was established in 2019 to ensure that KoboToolbox could be maintained sustainably for the long-term and develop further.</li>
-<li>Other partners include the United Nations Refugee Agency (UNHCR) and the United Nations Office for the Coordination of Humanitarian Affairs (UN OCHA).</li>
-<li>KoboToolbox is being used by <strong>&gt;14,000</strong> organisations around the world. This includes
+<li>Begin the questionnaire with simple and easy to answer questions. If you will need to ask sensitive questions, save those for later.</li>
+<li>Likewise, order questions from those which are more general in scope to those which are more specific.</li>
+<li>Transition statements are useful when jumping between groups of questions, for example when you are changing from one subject area to another.</li>
+</ul>
+<p>Concerning the questions themselves, consider the following:</p>
 <ul>
-<li>the International Office for Migration (IOM),</li>
-<li>Médecins Sans Frontières (MSF),</li>
-<li>the International Federation of Red Cross and Red Crescent Societies (IFRC),</li>
-<li>the United Nations Children’s Fund (UNICEF),</li>
-<li>Save the Children,</li>
-<li>the African Development Bank,</li>
-<li>the World Bank Group,</li>
-<li>the German Agency for International Cooperation (GIZ),</li>
-<li>Education Above All,</li>
-<li>the United Nations Educational, Scientific and Cultural Organization (UNESCO),</li>
-<li>the World Food Programme (WFP),</li>
-<li>the UN Food and Agriculture Organisation (FAO),</li>
-<li>and the Joint Data Center on Forced Displacement (JDC).</li>
+<li>Questions should be clear:
+<ul>
+<li>There should be no ambiguity what is being asked and what sort of response is required.</li>
+<li>Words and phrases should be precise.</li>
+<li>Formatting can be used to place emphasis on key words or phrases (i.e.&nbsp;bold, italics, underlining, capitalization or highlighting).</li>
+<li>Units of measure should be stated. Ask one question at a time.</li>
+</ul></li>
+<li>Questions should be answerable:
+<ul>
+<li>Do not ask people for information they do not have.</li>
+<li>When in doubt as to whether a question is answerable, you can include the option <em>“don’t know”</em> as a valid response.</li>
+<li>Do not ask people to recall things over extensive time periods where memory is sure to fail.</li>
+</ul></li>
+<li>Make questions easy:
+<ul>
+<li>A good rule of thumb is to keep questions under 25 words long.</li>
+<li>Do not ask for more detail than you need.</li>
+<li>Where necessary, ask for <em>approximate</em> or <em>“best estimate”</em> or <em>“as best as you can recall”</em> responses.</li>
+<li>Keep things simple, and as much as possible, keep the questionnaire short.</li>
+</ul></li>
+<li>Keep your questions unbiased:
+<ul>
+<li>Do not say things to the respondent which will influence their responses.</li>
+<li>Reassure the respondent that negative, positive and neutral responses are equally valid responses.</li>
+<li>Answer choices can be randomized to reduce the possibility of bias. Electronic forms are great at this.</li>
+<li>Sensitive questions can be asked in a disguised manner, or perhaps in a way where the focus is not strictly on the respondent, but on the wider group to which the respondent belongs, or analogue questions may be asked instead.</li>
 </ul></li>
 </ul>
 </section>
-<section id="is-kobotoolbox-used-by-other-agencies-closer-to-home" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="is-kobotoolbox-used-by-other-agencies-closer-to-home"><span class="header-section-number">1.2</span> Is KoboToolbox used by other agencies closer to home?</h2>
-<p>Here are a few I personally have worked with:</p>
+</section>
+<section id="question-review-and-pilot-testing" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Question review and pilot-testing</h1>
+<p>Believe it or not, after your survey is designed and your questionnaire is drafted, we are still not yet ready to go out there and collect that sweet, sweet data! We are now at the review stage. Review gives us the opportunity to ensure that the questionnaire will work as intended, and will not befuddle our respondents, frustrate our enumerators, add to our stress levels, as survey leads, or disappoint our higher-ups when we finally give them the resulting information. We need to maximize the possibility that respondents will participate and the responses received are clear and unambiguous.</p>
+<p>Pilot-testing the questionnaire helps with this review process. Here are a few things to look out for when reviewing the questionnaire:</p>
 <ul>
-<li>University of the West Indies</li>
-<li>Barbados Fisheries Division</li>
-<li>Suriname Fisheries Department</li>
-<li>Saint Lucia Fisheries Department</li>
+<li>Are respondents willing to answer the questions in the form you propose to use?</li>
+<li>What are the country-specific response categories?</li>
+<li>Are any of the questions particularly difficult or sensitive? Do interviewers understand the questions? Extra training can focus on these questions.</li>
+<li>Do the respondents misinterpret the questions? Are any of the words ambiguous or difficult to understand? The pre-test should point to where changes in wording or improved translation are needed.</li>
+<li>Does the questionnaire flow smoothly? Can the interviewers follow the instructions easily?</li>
+<li>Is there adequate space on the form and are the answers clearly coded? The pre-test should show where the format needs to be improved before the final questionnaire is printed.</li>
+<li>Is it necessary to create new codes for common answers that were not included in the original questionnaires?</li>
+<li>How long does an interview take? The answer to this question will help you decide how many interviewers are needed and how long the fieldwork will take.</li>
+<li>Are there any ethical considerations that were overlooked?</li>
+<li>The appropriateness and feasibility of the sampling method.</li>
+<li>Whether the questions have been placed in the best order.</li>
+<li>Whether the questions are understood by all classes of respondent</li>
+<li>Whether additional or specifying questions are needed or whether some questions should be eliminated.</li>
+<li>Whether the instructions to enumerators are adequate.</li>
+<li>Whether additional training for enumerators, instrument administrators, experimenters, coders, and data editors are necessary?</li>
 </ul>
-</section>
-<section id="is-kobotoolbox-used-in-dominica" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="is-kobotoolbox-used-in-dominica"><span class="header-section-number">1.3</span> Is KoboToolbox used in Dominica?</h2>
-<p>KoboToolbox has been used and or is being used by these agencies:</p>
-<ul>
-<li>Fisheries Division</li>
-<li>Division of Agriculture</li>
-<li>Dominica Emergency Agriculture Livelihoods Climate Resilience Project (EALCRP)</li>
-<li>Information Communication Technology Unit (ICTU)</li>
-<li><em>Physical Planning</em></li>
-<li><em>Environmental Health</em></li>
-<li>Other?</li>
-</ul>
-</section>
-</section>
-<section id="kobotoolbox-features" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> KoboToolbox Features</h1>
-<section id="web-formbuilder" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="web-formbuilder"><span class="header-section-number">2.1</span> Web Formbuilder</h2>
-<p><img src="formbuilder1_src-kobo.png" alt="Web form builder. *Source: Kobo*" width="700"></p>
-<p>The web formbuilder allows for the designing of very basic to fairly complex and intuitive and <em>powerful</em> electronic forms or questionnaires. It has 25 quantitative and qualitative question types to choose from:</p>
-<ul>
-<li>text (short or long/memo),</li>
-<li>numeric (integer or decimal),</li>
-<li>date and time,</li>
-<li>single- or multi-select,</li>
-<li>ranges,</li>
-<li>ranks,</li>
-<li>images or photos,</li>
-<li>audio,</li>
-<li>video,</li>
-<li>geospatial (points, traces or lines, shapes),</li>
-<li>barcodes,</li>
-<li>calculations,</li>
-<li>and much more.</li>
-</ul>
-<p>Additionally, the formbuilder helps you add in many useful features to your forms to ensure high quality data is collected efficiently. These include: - skip logic, - validation, - and even language translation.</p>
-</section>
-<section id="question-library" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="question-library"><span class="header-section-number">2.2</span> Question Library</h2>
-<p><img src="library1_src-kobo.png" alt="Question library. *Source: Kobo*" width="700"></p>
-<p>The question library helps you keep your questions standardized. You can also create templates which can be reused in future forms. Or, you can browse the public collections for question inspirations or simply include them in your questionnaire project.</p>
-</section>
-<section id="data-collection-via-mobile-app-or-web-browser" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="data-collection-via-mobile-app-or-web-browser"><span class="header-section-number">2.3</span> Data collection via mobile app or Web browser</h2>
-<p><img src="enketo1_src-kobo.png" alt="Using Enketo web forms. *Source: Kobo*" width="700"></p>
-<p>As previously mentioned, KoboToolbox can be used online or offline for data collection, using virtually any device. In practice this can be done in two ways:</p>
-<ol type="1">
-<li><p><strong>KoboCollect</strong>: This is an Android app which connects to a KoboToolbox server to access eforms, collect data, and submit data. This app is free on Google Play (<a href="https://play.google.com/store/apps/details?id=org.koboc.collect.android" class="uri">https://play.google.com/store/apps/details?id=org.koboc.collect.android</a>). of course, this option is only available to Android devices or devices which can emulate an Android Operating System. <img src="KoboCollect.png" alt="KoboCollect app" width="700"></p></li>
-<li><p><strong>Web forms</strong>: Enketo web forms, an open source software application, is used by KoboToolbox to display and receive responses from your eforms. This option can be used on any device which can run a browser. <img src="enketo_preview_FD FCE.png" alt="Enketo web form in computer browser showing the Fisheries Division's FCE e-form." width="700"></p></li>
-</ol>
-</section>
-<section id="data-repository-management-and-reporting" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="data-repository-management-and-reporting"><span class="header-section-number">2.4</span> Data Repository: Management and Reporting</h2>
-<p>This is where the data you have collected will be stored and made available for you to access, manage, review. Additionally you may view a pre-made report complete with visualizations. Lastly, you can find your data available for download in several formats (including XLS, CSV, KML, ZIP, and GeoJSON).</p>
-<p><img src="data repository.png" alt="Data repository table" width="700"></p>
-</section>
-<section id="project-survey-management" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="project-survey-management"><span class="header-section-number">2.5</span> Project (survey) management</h2>
-<p>All of the features we’ve discussed so far is managed within a project in KoboToolbox. This means the questionnaire can be shared with a team for co-development. Or perhaps you need a colleague to assist with validating or editing the incoming data. permissions can be set for each user appropriately, as required for each project or survey.</p>
-<p>One more thing you can do here is link projects! Perhaps we will discuss more on this in a future course. :)</p>
-<p><img src="project_management_src-kobo.png" alt="Project management. *Source: Kobo*" width="700"></p>
-</section>
-</section>
-<section id="the-kobotoolbox-workflow" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> The KoboToolbox Workflow</h1>
-<p>This is how KoboToolbox can fit within your data workflow:</p>
-<ol type="1">
-<li>Draft your questionnaire.</li>
-<li>Digitize the questionnaire using the web formbuilder, creating an e-form or e-questionnaire.</li>
-<li>The completed e-form is then deployed for data collection. There are several options for deploying, based on your needs. Restrictions can also be set to prevent unauthorized users from submitting data. <img src="deploy KoboToolbox form.png" alt="Deploy form in KoboToolbox" width="700"></li>
-<li>The e-form is piloted and reviewed, as needed. Both the KoboCollect app and the Enketo web form can be used to see how your enumerators and prospective respondents will use the e-form.</li>
-<li>The survey is administered. Records coming in can be monitored in the data repository. Records can be validated (approved, put on hold or not approved) or edited, as needed.</li>
-<li>When the survey is done or I need to make a report I can download my data. Or, I can use a more fancy option, such as <strong>R</strong>, to automate the process. :) <img src="data download KoboToolbox.png" alt="Data repository download" width="700"></li>
-</ol>
 </section>
 
 </main>

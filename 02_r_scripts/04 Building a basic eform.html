@@ -9,7 +9,7 @@
 <meta name="author" content="Derrick Theophille">
 <meta name="dcterms.date" content="2024-05-04">
 
-<title>03: An overview of the KoboToolbox ecosystem</title>
+<title>04 Building a basic e-form in KoboToolbox</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,16 +25,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="03-01 An overview of KoboToolbox_files/libs/clipboard/clipboard.min.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/quarto.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/popper.min.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/anchor.min.js"></script>
-<link href="03-01 An overview of KoboToolbox_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="03-01 An overview of KoboToolbox_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="03-01 An overview of KoboToolbox_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="03-01 An overview of KoboToolbox_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="03-01 An overview of KoboToolbox_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="04 Building a basic eform_files/libs/clipboard/clipboard.min.js"></script>
+<script src="04 Building a basic eform_files/libs/quarto-html/quarto.js"></script>
+<script src="04 Building a basic eform_files/libs/quarto-html/popper.min.js"></script>
+<script src="04 Building a basic eform_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="04 Building a basic eform_files/libs/quarto-html/anchor.min.js"></script>
+<link href="04 Building a basic eform_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="04 Building a basic eform_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="04 Building a basic eform_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="04 Building a basic eform_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="04 Building a basic eform_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -47,21 +47,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-kobotoolbox" id="toc-what-is-kobotoolbox" class="nav-link active" data-scroll-target="#what-is-kobotoolbox"><span class="header-section-number">1</span> What is KoboToolbox?</a>
+  <li><a href="#creating-an-account-at-kobotoolbox" id="toc-creating-an-account-at-kobotoolbox" class="nav-link active" data-scroll-target="#creating-an-account-at-kobotoolbox"><span class="header-section-number">1</span> Creating an account at KoboToolbox</a></li>
+  <li><a href="#the-web-formbuilder" id="toc-the-web-formbuilder" class="nav-link" data-scroll-target="#the-web-formbuilder"><span class="header-section-number">2</span> The web formbuilder</a>
   <ul class="collapse">
-  <li><a href="#some-background-to-kobotoolbox" id="toc-some-background-to-kobotoolbox" class="nav-link" data-scroll-target="#some-background-to-kobotoolbox"><span class="header-section-number">1.1</span> Some background to KoboToolbox</a></li>
-  <li><a href="#is-kobotoolbox-used-by-other-agencies-closer-to-home" id="toc-is-kobotoolbox-used-by-other-agencies-closer-to-home" class="nav-link" data-scroll-target="#is-kobotoolbox-used-by-other-agencies-closer-to-home"><span class="header-section-number">1.2</span> Is KoboToolbox used by other agencies closer to home?</a></li>
-  <li><a href="#is-kobotoolbox-used-in-dominica" id="toc-is-kobotoolbox-used-in-dominica" class="nav-link" data-scroll-target="#is-kobotoolbox-used-in-dominica"><span class="header-section-number">1.3</span> Is KoboToolbox used in Dominica?</a></li>
+  <li><a href="#creating-a-project" id="toc-creating-a-project" class="nav-link" data-scroll-target="#creating-a-project"><span class="header-section-number">2.1</span> Creating a project</a></li>
+  <li><a href="#adding-questions-to-your-survey" id="toc-adding-questions-to-your-survey" class="nav-link" data-scroll-target="#adding-questions-to-your-survey"><span class="header-section-number">2.2</span> Adding questions to your survey</a></li>
+  <li><a href="#question-settings" id="toc-question-settings" class="nav-link" data-scroll-target="#question-settings"><span class="header-section-number">2.3</span> Question settings</a></li>
   </ul></li>
-  <li><a href="#kobotoolbox-features" id="toc-kobotoolbox-features" class="nav-link" data-scroll-target="#kobotoolbox-features"><span class="header-section-number">2</span> KoboToolbox Features</a>
-  <ul class="collapse">
-  <li><a href="#web-formbuilder" id="toc-web-formbuilder" class="nav-link" data-scroll-target="#web-formbuilder"><span class="header-section-number">2.1</span> Web Formbuilder</a></li>
-  <li><a href="#question-library" id="toc-question-library" class="nav-link" data-scroll-target="#question-library"><span class="header-section-number">2.2</span> Question Library</a></li>
-  <li><a href="#data-collection-via-mobile-app-or-web-browser" id="toc-data-collection-via-mobile-app-or-web-browser" class="nav-link" data-scroll-target="#data-collection-via-mobile-app-or-web-browser"><span class="header-section-number">2.3</span> Data collection via mobile app or Web browser</a></li>
-  <li><a href="#data-repository-management-and-reporting" id="toc-data-repository-management-and-reporting" class="nav-link" data-scroll-target="#data-repository-management-and-reporting"><span class="header-section-number">2.4</span> Data Repository: Management and Reporting</a></li>
-  <li><a href="#project-survey-management" id="toc-project-survey-management" class="nav-link" data-scroll-target="#project-survey-management"><span class="header-section-number">2.5</span> Project (survey) management</a></li>
-  </ul></li>
-  <li><a href="#the-kobotoolbox-workflow" id="toc-the-kobotoolbox-workflow" class="nav-link" data-scroll-target="#the-kobotoolbox-workflow"><span class="header-section-number">3</span> The KoboToolbox Workflow</a></li>
   </ul>
 </nav>
 </div>
@@ -69,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">03: An overview of the KoboToolbox ecosystem</h1>
+<h1 class="title">04 Building a basic e-form in KoboToolbox</h1>
 </div>
 
 
@@ -98,126 +90,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-is-kobotoolbox" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> What is KoboToolbox?</h1>
-<p><img src="KoBoToolbox-main-webpage.png" alt="KoboToolbox webpage" width="700"></p>
-<ul>
-<li>KoboToolbox is a suite of applications providing an open source data collection tool for working in <strong>“challenging”</strong> environments, such as humanitarian and human rights, global development, and environmental protection cases. But it is not limited to only these areas.</li>
-<li>It is designed to address many of the shortcomings of mobile data collection.</li>
-<li>KoboToolbox lends reliability, accuracy, speed, data quality, analysis and cost effectiveness to mobile data collection.</li>
-<li>Works for data collection <strong>offline</strong> or <strong>online</strong> on virtually any device.</li>
-<li>It is useful for much more than data collection. It can also be used for managing and visualizing collected data.</li>
-<li>Its main features are free to use.</li>
-</ul>
-<p>You can visit the main webpage here: <a href="https://www.kobotoolbox.org" class="uri">https://www.kobotoolbox.org</a></p>
-<section id="some-background-to-kobotoolbox" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="some-background-to-kobotoolbox"><span class="header-section-number">1.1</span> Some background to KoboToolbox</h2>
-<ul>
-<li>KoboToolbox was developed by the <strong>Harvard Humanitarian Initiative</strong> in association with Brigham and Women’s Hospital and USAID.</li>
-<li>KoboToolbox is hosted and maintained by an international nonprofit organisation called <strong>Kobo</strong>, registered in Cambridge Massachusetts, United States. This organisation was established in 2019 to ensure that KoboToolbox could be maintained sustainably for the long-term and develop further.</li>
-<li>Other partners include the United Nations Refugee Agency (UNHCR) and the United Nations Office for the Coordination of Humanitarian Affairs (UN OCHA).</li>
-<li>KoboToolbox is being used by <strong>&gt;14,000</strong> organisations around the world. This includes
-<ul>
-<li>the International Office for Migration (IOM),</li>
-<li>Médecins Sans Frontières (MSF),</li>
-<li>the International Federation of Red Cross and Red Crescent Societies (IFRC),</li>
-<li>the United Nations Children’s Fund (UNICEF),</li>
-<li>Save the Children,</li>
-<li>the African Development Bank,</li>
-<li>the World Bank Group,</li>
-<li>the German Agency for International Cooperation (GIZ),</li>
-<li>Education Above All,</li>
-<li>the United Nations Educational, Scientific and Cultural Organization (UNESCO),</li>
-<li>the World Food Programme (WFP),</li>
-<li>the UN Food and Agriculture Organisation (FAO),</li>
-<li>and the Joint Data Center on Forced Displacement (JDC).</li>
-</ul></li>
-</ul>
-</section>
-<section id="is-kobotoolbox-used-by-other-agencies-closer-to-home" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="is-kobotoolbox-used-by-other-agencies-closer-to-home"><span class="header-section-number">1.2</span> Is KoboToolbox used by other agencies closer to home?</h2>
-<p>Here are a few I personally have worked with:</p>
-<ul>
-<li>University of the West Indies</li>
-<li>Barbados Fisheries Division</li>
-<li>Suriname Fisheries Department</li>
-<li>Saint Lucia Fisheries Department</li>
-</ul>
-</section>
-<section id="is-kobotoolbox-used-in-dominica" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="is-kobotoolbox-used-in-dominica"><span class="header-section-number">1.3</span> Is KoboToolbox used in Dominica?</h2>
-<p>KoboToolbox has been used and or is being used by these agencies:</p>
-<ul>
-<li>Fisheries Division</li>
-<li>Division of Agriculture</li>
-<li>Dominica Emergency Agriculture Livelihoods Climate Resilience Project (EALCRP)</li>
-<li>Information Communication Technology Unit (ICTU)</li>
-<li><em>Physical Planning</em></li>
-<li><em>Environmental Health</em></li>
-<li>Other?</li>
-</ul>
-</section>
-</section>
-<section id="kobotoolbox-features" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> KoboToolbox Features</h1>
-<section id="web-formbuilder" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="web-formbuilder"><span class="header-section-number">2.1</span> Web Formbuilder</h2>
-<p><img src="formbuilder1_src-kobo.png" alt="Web form builder. *Source: Kobo*" width="700"></p>
-<p>The web formbuilder allows for the designing of very basic to fairly complex and intuitive and <em>powerful</em> electronic forms or questionnaires. It has 25 quantitative and qualitative question types to choose from:</p>
-<ul>
-<li>text (short or long/memo),</li>
-<li>numeric (integer or decimal),</li>
-<li>date and time,</li>
-<li>single- or multi-select,</li>
-<li>ranges,</li>
-<li>ranks,</li>
-<li>images or photos,</li>
-<li>audio,</li>
-<li>video,</li>
-<li>geospatial (points, traces or lines, shapes),</li>
-<li>barcodes,</li>
-<li>calculations,</li>
-<li>and much more.</li>
-</ul>
-<p>Additionally, the formbuilder helps you add in many useful features to your forms to ensure high quality data is collected efficiently. These include: - skip logic, - validation, - and even language translation.</p>
-</section>
-<section id="question-library" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="question-library"><span class="header-section-number">2.2</span> Question Library</h2>
-<p><img src="library1_src-kobo.png" alt="Question library. *Source: Kobo*" width="700"></p>
-<p>The question library helps you keep your questions standardized. You can also create templates which can be reused in future forms. Or, you can browse the public collections for question inspirations or simply include them in your questionnaire project.</p>
-</section>
-<section id="data-collection-via-mobile-app-or-web-browser" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="data-collection-via-mobile-app-or-web-browser"><span class="header-section-number">2.3</span> Data collection via mobile app or Web browser</h2>
-<p><img src="enketo1_src-kobo.png" alt="Using Enketo web forms. *Source: Kobo*" width="700"></p>
-<p>As previously mentioned, KoboToolbox can be used online or offline for data collection, using virtually any device. In practice this can be done in two ways:</p>
+<section id="creating-an-account-at-kobotoolbox" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Creating an account at KoboToolbox</h1>
+<p>To begin using KoboToolbox you will need to create an account. Here are the steps:</p>
 <ol type="1">
-<li><p><strong>KoboCollect</strong>: This is an Android app which connects to a KoboToolbox server to access eforms, collect data, and submit data. This app is free on Google Play (<a href="https://play.google.com/store/apps/details?id=org.koboc.collect.android" class="uri">https://play.google.com/store/apps/details?id=org.koboc.collect.android</a>). of course, this option is only available to Android devices or devices which can emulate an Android Operating System. <img src="KoboCollect.png" alt="KoboCollect app" width="700"></p></li>
-<li><p><strong>Web forms</strong>: Enketo web forms, an open source software application, is used by KoboToolbox to display and receive responses from your eforms. This option can be used on any device which can run a browser. <img src="enketo_preview_FD FCE.png" alt="Enketo web form in computer browser showing the Fisheries Division's FCE e-form." width="700"></p></li>
+<li>Go to <a href="https://www.kobotoolbox.org/" class="uri">https://www.kobotoolbox.org/</a></li>
+<li>Click on “Sign up”</li>
+<li>Select which server you want to work with. Click “Create an account” for your preferred server. <img src="set up KoboToolbox account.png" alt="Setting up a KoboToolbox account." width="700"></li>
+<li>Enter in the necessary information to create your account. <img src="account details.png" alt="KoboToolbox account details." width="700"></li>
+<li>Confirm your email address by clicking the activation link in your email.</li>
+<li>Now we are ready to create our first project. <img src="KoboToolbox no projects.png" alt="New KoboToolbox account with no projects." width="700"></li>
 </ol>
 </section>
-<section id="data-repository-management-and-reporting" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="data-repository-management-and-reporting"><span class="header-section-number">2.4</span> Data Repository: Management and Reporting</h2>
-<p>This is where the data you have collected will be stored and made available for you to access, manage, review. Additionally you may view a pre-made report complete with visualizations. Lastly, you can find your data available for download in several formats (including XLS, CSV, KML, ZIP, and GeoJSON).</p>
-<p><img src="data repository.png" alt="Data repository table" width="700"></p>
-</section>
-<section id="project-survey-management" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="project-survey-management"><span class="header-section-number">2.5</span> Project (survey) management</h2>
-<p>All of the features we’ve discussed so far is managed within a project in KoboToolbox. This means the questionnaire can be shared with a team for co-development. Or perhaps you need a colleague to assist with validating or editing the incoming data. permissions can be set for each user appropriately, as required for each project or survey.</p>
-<p>One more thing you can do here is link projects! Perhaps we will discuss more on this in a future course. :)</p>
-<p><img src="project_management_src-kobo.png" alt="Project management. *Source: Kobo*" width="700"></p>
-</section>
-</section>
-<section id="the-kobotoolbox-workflow" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> The KoboToolbox Workflow</h1>
-<p>This is how KoboToolbox can fit within your data workflow:</p>
+<section id="the-web-formbuilder" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> The web formbuilder</h1>
+<section id="creating-a-project" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="creating-a-project"><span class="header-section-number">2.1</span> Creating a project</h2>
+<p>Let’s create a project. Remember, your surveys are called projects in KoboToolbox. Here are the steps to get you started:</p>
 <ol type="1">
-<li>Draft your questionnaire.</li>
-<li>Digitize the questionnaire using the web formbuilder, creating an e-form or e-questionnaire.</li>
-<li>The completed e-form is then deployed for data collection. There are several options for deploying, based on your needs. Restrictions can also be set to prevent unauthorized users from submitting data. <img src="deploy KoboToolbox form.png" alt="Deploy form in KoboToolbox" width="700"></li>
-<li>The e-form is piloted and reviewed, as needed. Both the KoboCollect app and the Enketo web form can be used to see how your enumerators and prospective respondents will use the e-form.</li>
-<li>The survey is administered. Records coming in can be monitored in the data repository. Records can be validated (approved, put on hold or not approved) or edited, as needed.</li>
-<li>When the survey is done or I need to make a report I can download my data. Or, I can use a more fancy option, such as <strong>R</strong>, to automate the process. :) <img src="data download KoboToolbox.png" alt="Data repository download" width="700"></li>
+<li>Click on “New”.</li>
+<li>Click on “Build from scratch” <img src="KoboToolbox new project.png" alt="New project." width="700"></li>
+<li>Enter your project details. <img src="new project details.png" alt="New project details." width="700"></li>
+<li>Now we are presented with the web formbuilder.</li>
 </ol>
+</section>
+<section id="adding-questions-to-your-survey" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="adding-questions-to-your-survey"><span class="header-section-number">2.2</span> Adding questions to your survey</h2>
+<p>We add questions to our survey project using the web formbuilder. Here are the steps:</p>
+<ol type="1">
+<li>Click the plus sign to add a question.</li>
+<li>Type in the text to your question. Click “Add question”.</li>
+<li>Select the type of question which suits the text and expected response. <img src="add question types.png" alt="Question types." width="700"></li>
+<li>Your question is now added. <img src="question done.png" alt="Question added." width="700"></li>
+</ol>
+</section>
+<section id="question-settings" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="question-settings"><span class="header-section-number">2.3</span> Question settings</h2>
+<p>Every question come with settings, based on the question type, which can change how those questions work. Let’s explore this a bit.</p>
+<p>The settings for a question can be accessed by selecting the cog icon to the right of that question. Notice how the question color changes as the mouse hovers over the various icons. <img src="question settings 01.png" alt="Question settings." width="700"> <img src="question settings 02.png" alt="Question settings." width="700"></p>
+</section>
 </section>
 
 </main>

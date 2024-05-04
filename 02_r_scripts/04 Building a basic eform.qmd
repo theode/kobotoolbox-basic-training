@@ -1,0 +1,78 @@
+---
+title: "04 Building a basic e-form in KoboToolbox"
+author: "Derrick Theophille"
+date: last-modified
+date-format: "DD MMMM YYYY"
+
+format: 
+  html:
+    toc: true
+    number-sections: true
+    fig_caption: false
+
+execute: 
+  echo: true
+  message: false
+  warning: false
+  
+knitr: 
+  opts_chunk: 
+    comment: false
+    collapse: true
+---
+
+```{r}
+#| label: sources-01
+#| echo: false
+
+# some-sources
+
+# https://support.kobotoolbox.org/welcome.html
+
+```
+
+# Creating an account at KoboToolbox
+
+To begin using KoboToolbox you will need to create an account. Here are the steps:
+
+1. Go to <https://www.kobotoolbox.org/>
+2. Click on "Sign up"
+3. Select which server you want to work with. Click "Create an account" for your preferred server.
+<img src="set up KoboToolbox account.png" alt="Setting up a KoboToolbox account." width="700"/>
+4. Enter in the necessary information to create your account.
+<img src="account details.png" alt="KoboToolbox account details." width="700"/>
+5. Confirm your email address by clicking the activation link in your email.
+6. Now we are ready to create our first project.
+<img src="KoboToolbox no projects.png" alt="New KoboToolbox account with no projects." width="700"/>
+
+
+# The web formbuilder
+
+## Creating a project
+Let's create a project. Remember, your surveys are called projects in KoboToolbox. Here are the steps to get you started:
+
+1. Click on "New".
+2. Click on "Build from scratch"
+<img src="KoboToolbox new project.png" alt="New project." width="700"/>
+3. Enter your project details.
+<img src="new project details.png" alt="New project details." width="700"/>
+4. Now we are presented with the web formbuilder.
+
+## Adding questions to your survey
+We add questions to our survey project using the web formbuilder. Here are the steps:
+
+1. Click the plus sign to add a question.
+2. Type in the text to your question. Click "Add question".
+3. Select the type of question which suits the text and expected response.
+<img src="add question types.png" alt="Question types." width="700"/>
+4. Your question is now added.
+<img src="question done.png" alt="Question added." width="700"/>
+5. Save your survey by clicking "Save", located to teh top right of the page.
+
+## Question settings
+Every question come with settings, based on the question type, which can change how those questions work. Let's explore this a bit.
+
+The settings for a question can be accessed by selecting the cog icon to the right of that question. Notice how the question color changes as the mouse hovers over the various icons. 
+<img src="question settings 01.png" alt="Question settings." width="700"/>
+<img src="question settings 02.png" alt="Question settings." width="700"/>
+

@@ -52,7 +52,7 @@ sources
 # https://www.scribbr.com/methodology/data-collection/#:~:text=Data%20collection%20is%20a%20systematic%20process%20of%20gathering,knowledge%20and%20original%20insights%20into%20your%20research%20problem.
 ```
 
-We usually mean **Primary Data Collection** when we speak of collecting the information directly or first-hand, straight from the source or in the field. This data is "raw" and never-before collected by anyone. 
+When we talk about the origins of our data we refer to our data sources, of which there are two types. We usually mean **Primary Data Collection** when we speak of collecting the information directly or first-hand, straight from the source or in the field. This data is "raw" and never-before collected by anyone. 
 
 Examples of primary data: 
 
@@ -185,7 +185,7 @@ The advancement and ubiquity of technology in our daily lives has allowed previo
 
 Smart mobile devices are pretty common, aren't they? We use them for making calls, playing music, catching up on the news or social media, or playing our favorite game while on the go. Why not also use them for data collection? Why not collect our data with the use of electronic devices? 
 
-[ pic of mobile phone or tablet with KoboToolbox on the screen]
+<img src="enketo1_src-kobo.png" alt="Using Enketo web forms. *Source: Kobo*" width="700"/>
 
 **Electronic data collection is the use of electronic devices for data collection.** This is sometimes termed *mobile data collection*. 
 
@@ -222,3 +222,15 @@ We will need to know the pros and cons of this approach to data collection.
 kable(read_xlsx(here("00_raw_data", "comaprison-paper-vs-electronic-data-collection.xlsx"), sheet = "electronic"))
 
 ```
+
+## Tools for "electronic" data collection
+
+Several options exist for electronic data collection. A non-exhaustive list includes:
+
+- Microsoft Office
+- Google Forms and Sheets
+- MySQL or PostgreSQL
+- Survey Monkey
+- Open Data Kit (ODK)
+- SurveyCTO
+- **KoboToolbox**

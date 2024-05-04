@@ -1,5 +1,5 @@
 ---
-title: "02 Basics of survey design"
+title: "02: Basics of survey design and questionnaire development"
 author: "Derrick Theophille"
 date: last-modified
 date-format: "DD MMMM YYYY"
@@ -21,4 +21,131 @@ knitr:
     collapse: true
 ---
 
-#
+```{r}
+#| label: Sources
+#| echo: false
+
+
+# Surveys ----
+# https://www.surveycto.com/resources/guides/data-collection-methods-guide/
+# https://www.scribbr.com/methodology/survey-research/
+
+# What is a survey?
+# https://www.qualtrics.com/uk/experience-management/research/surveys/
+
+# Questionnaires ----
+# https://researchmethod.net/questionnaire/
+```
+
+
+# Surveys
+
+## What is a survey?
+
+A survey can be defined as **data collection where a portion of a population may be interviewed or sampled, using using specific, standard questions**. The aim is usually **to understand the population as whole**. This is primary data collection. 
+
+A survey is usually administered in three main ways:
+
+1. Face-to-face (in-person)
+2. Over the phone (remote)
+3. Self-administered
+
+Beyond this, the survey can involve traditional paper-based tools or more modern and electronic approaches. The methods employed beyond these can vary, based on several factors, such as the population to be studied and their geographic distribution, the resources available for conducting the survey, the amount of time available,  and the types of questions to be asked and answered. 
+
+A survey can also vary in duration. **Research surveys**, for example usually have a short, defined period, after which the survey is ended. **Monitoring surveys** are longer or on-going indefinitely. A college student conducting a survey for their final paper will be doing research. An Agricultural Officer documenting crop establishments of her farmers is conducting a monitoring exercise. Both of these are surveys, but, as you might imagine, they are administered quite differently.
+
+Herein is the crux of this section: **Surveys and questionnaires may seem like pretty simple things to design and administer, however, there is plenty of room for misunderstandings and frustration to plague your survey exercise and derived results.**
+
+## Considerations for designing a survey
+
+### Primary and Secondary?
+We've already discussed data sources, meaning primary and secondary data. This is the initial consideration when surveys are being designed. **After all, the data you intend to gather may already exist!** This can be beneficial as it may mean that your data collection activity might *simply* be a **desk research** exercise, collating and analyzing already existing data. It may also be beneficial if some of the already-existing data will not need to be collected by you, hence reducing the length and duration of your survey questionnaire. This will especially be the case if the secondary data is still "fresh" and relevant to the current survey goals.
+
+### The *Why*
+This leads us to having an understanding of the purpose of your survey. To an extent, this was also discussed previously. We might know why we need to collect some portion of data, but do we understand what the survey intends to accomplish? It is good to document the survey purpose so when the survey exercise is completed you may know whether you have accomplished what you set out to do from the beginning. Similarly, for ongoing surveys, we can have a means to verify that we are meeting our survey objectives.
+
+In the case of the Fisheries Division's *Fish Catch and Effort data collection programme*, an ongoing monitoring programme, our survey purpose is to **account for and document fish landed (fish catch) and fishing activity (effort) at selected landing sites around Dominica for a given day**.
+
+With research surveys, we may need to define our research objectives at this point. This can be as simple as stating what we hope to achieve from the collected data.
+
+### Anything else?
+Of course, there is a lot more to consider where surveys are concerned. This includes the population and sample size, questionnaire type and questions, tool for data gathering, whether enumerators will be required, and how many (and at what rate of pay), and how much time and money are available for the survey. If enumerators are needed, it is important to take the time to determine who would make suitable enumerators, recruit them and train them to administer the survey properly.
+
+**All considerations help us in planning and tailoring the survey and its questions to fit that specific scenario while achieving the desired results.** Ultimately, we should seek to have our survey support decision-making.
+
+
+# Questionnaires
+
+## What is a questionnaire?
+
+**A questionnaire is a survey tool consisting of a list of questions or prompts designed to gather data on a survey subject or respondent.** Questionnaires are a standardized means of collecting data towards meeting a survey objective. This is the heart of your survey. 
+
+In preparation for this section, I learned that questionnaires may have originated, like most things in our modern world, from the ancient Greeks, who used questionnaires to gauge public opinion on a matter. Of course, questionnaires have applications in business (market research), academia, health care, and even government.
+
+## Types of questionnaires
+
+Questionnaires come in many flavors. Broadly, these can include:
+
+1. **Structured and close-ended**: The questions are usually closed-ended in a fixed format with predetermined response options. The respondent can only respond with the pre-determined options presented by the enumerator. Allows for the capture of quantitative data.
+2. **Unstructured and open-ended**: The questions are open-ended, not in a fixed format and are not pre-determined. The respondent is encouraged to respond in their own words. Provides a lot of insight into the opinions an attitudes of the respondent, more difficult to analyse and summarize. Allows for the capture of qualitative data.
+3. **Mixed**: This questionnaire has both open- and closed-ended questions. This allows for more flexibility in the responses received as both quantitative and qualitative data may be captured simultaneously.
+
+
+## Considerations for developing a questionnaire
+
+Before proceeding with questionnaire writing we should do the following:
+
+- Determine what information you need to know.
+- Have some idea how the data to be collected can be analysed.
+- Categorize and organize the data you plan to collect with your questionnaire.
+
+Concerning questionnaire structure, consider the following:
+
+- Begin the questionnaire with simple and easy to answer questions. If you will need to ask sensitive questions, save those for later.
+- Likewise, order questions from those which are more general in scope to those which are more specific.
+- Transition statements are useful when jumping between groups of questions, for example when you are changing from one subject area to another.
+
+Concerning the questions themselves, consider the following:
+
+- Questions should be clear: 
+  - There should be no ambiguity what is being asked and what sort of response is required. 
+  - Words and phrases should be precise. 
+  - Formatting can be used to place emphasis on key words or phrases (i.e. bold, italics, underlining, capitalization or highlighting). 
+  - Units of measure should be stated. Ask one question at a time.
+- Questions should be answerable: 
+  - Do not ask people for information they do not have. 
+  - When in doubt as to whether a question is answerable, you can include the option *"don't know"* as a valid response. 
+  - Do not ask people to recall things over extensive time periods where memory is sure to fail.
+- Make questions easy: 
+  - A good rule of thumb is to keep questions under 25 words long. 
+  - Do not ask for more detail than you need. 
+  - Where necessary, ask for *approximate* or *"best estimate"* or *"as best as you can recall"* responses. 
+  - Keep things simple, and as much as possible, keep the questionnaire short.
+- Keep your questions unbiased:
+  - Do not say things to the respondent which will influence their responses.
+  - Reassure the respondent that negative, positive and neutral responses are equally valid responses.
+  - Answer choices can be randomized to reduce the possibility of bias. Electronic forms are great at this.
+  - Sensitive questions can be asked in a disguised manner, or perhaps in a way where the focus is not strictly on the respondent, but on the wider group to which the respondent belongs, or analogue questions may be asked instead.
+
+# Question review and pilot-testing
+
+Believe it or not, after your survey is designed and your questionnaire is drafted, we are still not yet ready to go out there and collect that sweet, sweet data! We are now at the review stage. Review gives us the opportunity to ensure that the questionnaire will work as intended, and will not befuddle our respondents, frustrate our enumerators, add to our stress levels, as survey leads, or disappoint our higher-ups when we finally give them the resulting information. We need to maximize the possibility that respondents will participate and the responses received are clear and unambiguous.
+
+Pilot-testing the questionnaire helps with this review process. This involves doing mock trials of the interview or self-administered survey. Here are a few things to look out for when reviewing the questionnaire:
+
+- Are respondents willing to answer the questions in the form you propose to use?
+- What are the country-specific response categories?
+-	Are any of the questions particularly difficult or sensitive? Do interviewers understand the questions? Extra training can focus on these questions.
+-	Do the respondents misinterpret the questions? Are any of the words ambiguous or difficult to understand? The pre-test should point to where changes in wording or improved translation are needed. 
+-	Does the questionnaire flow smoothly? Can the interviewers follow the instructions easily? 
+-	Is there adequate space on the form and are the answers clearly coded? The pre-test should show where the format needs to be improved before the final questionnaire is printed.
+-	Is it necessary to create new codes for common answers that were not included in the original questionnaires?
+-	How long does an interview take? The answer to this question will help you decide how many interviewers are needed and how long the fieldwork will take. 
+- Are there any ethical considerations that were overlooked?
+- The appropriateness and feasibility of the sampling method.
+- Whether the questions have been placed in the best order.
+- Whether the questions are understood by all classes of respondent 
+- Whether additional or specifying questions are needed or whether some questions should be eliminated.
+- Whether the instructions to enumerators are adequate.
+- Whether additional training for enumerators, instrument administrators, experimenters, coders, and data editors are necessary?
+

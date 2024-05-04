@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Derrick Theophille">
-<meta name="dcterms.date" content="2024-05-01">
+<meta name="dcterms.date" content="2024-05-04">
 
 <title>01: A comparison of paper-based and electronic field data collection systems</title>
 <style>
@@ -72,6 +72,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#digitization-and-beyond-post-data-collection-1" id="toc-digitization-and-beyond-post-data-collection-1" class="nav-link" data-scroll-target="#digitization-and-beyond-post-data-collection-1"><span class="header-section-number">3.2.3</span> Digitization and beyond (post-data collection)</a></li>
   </ul></li>
   <li><a href="#pros-and-cons-of-electronic-data-collection" id="toc-pros-and-cons-of-electronic-data-collection" class="nav-link" data-scroll-target="#pros-and-cons-of-electronic-data-collection"><span class="header-section-number">3.3</span> Pros and cons of “electronic” data collection</a></li>
+  <li><a href="#tools-for-electronic-data-collection" id="toc-tools-for-electronic-data-collection" class="nav-link" data-scroll-target="#tools-for-electronic-data-collection"><span class="header-section-number">3.4</span> Tools for “electronic” data collection</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -97,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">01 May 2024</p>
+      <p class="date">04 May 2024</p>
     </div>
   </div>
   
@@ -105,12 +106,14 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="what-is-data-collection" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> What is data collection?</h1>
 <p>This is the <strong>systematic</strong> process of <strong>gathering information</strong>, such as observations or measurements. This information can be gathered through digital or manual methods.</p>
-<p>We usually mean <strong>Primary Data Collection</strong> when we speak of collecting the information directly or first-hand, straight from the source or in the field. This data is “raw” and never-before collected by anyone.</p>
+<p>When we talk about the origins of our data we refer to our data sources, of which there are two types. We usually mean <strong>Primary Data Collection</strong> when we speak of collecting the information directly or first-hand, straight from the source or in the field. This data is “raw” and never-before collected by anyone.</p>
 <p>Examples of primary data:</p>
 <ul>
 <li>Measuring the length and weight of a fish which was just caught.</li>
@@ -235,7 +238,7 @@ Important
 <h2 data-number="3.1" class="anchored" data-anchor-id="what-is-electronic-data-collection"><span class="header-section-number">3.1</span> What is “electronic” data collection?</h2>
 <p>The advancement and ubiquity of technology in our daily lives has allowed previously unthinkable means of data collection to be a reality and become ever more feasible. Smart devices (eg. phones, tablets) are everywhere, making our lives better with their capabilities. The near seamless connectivity of smart devices encourages greater mobility and allows even more utility within our modern world.</p>
 <p>Smart mobile devices are pretty common, aren’t they? We use them for making calls, playing music, catching up on the news or social media, or playing our favorite game while on the go. Why not also use them for data collection? Why not collect our data with the use of electronic devices?</p>
-<p>[ pic of mobile phone or tablet with KoBoToolbox on the screen]</p>
+<p><img src="enketo1_src-kobo.png" alt="Using Enketo web forms. *Source: Kobo*" width="700"></p>
 <p><strong>Electronic data collection is the use of electronic devices for data collection.</strong> This is sometimes termed <em>mobile data collection</em>.</p>
 </section>
 <section id="how-do-electronic-data-collection-systems-typically-work" class="level2" data-number="3.2">
@@ -318,6 +321,19 @@ Note
 </table>
 </div>
 </div>
+</section>
+<section id="tools-for-electronic-data-collection" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="tools-for-electronic-data-collection"><span class="header-section-number">3.4</span> Tools for “electronic” data collection</h2>
+<p>Several options exist for electronic data collection. A non-exhaustive list includes:</p>
+<ul>
+<li>Microsoft Office</li>
+<li>Google Forms and Sheets</li>
+<li>MySQL or PostgreSQL</li>
+<li>Survey Monkey</li>
+<li>Open Data Kit (ODK)</li>
+<li>SurveyCTO</li>
+<li><strong>KoboToolbox</strong></li>
+</ul>
 </section>
 </section>
 
@@ -402,10 +418,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -415,8 +448,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -428,7 +470,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -472,6 +637,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -497,6 +663,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -557,6 +749,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
