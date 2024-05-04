@@ -67,7 +67,7 @@ We add questions to our survey project using the web formbuilder. Here are the s
 <img src="add question types.png" alt="Question types." width="700"/>
 4. Your question is now added.
 <img src="question done.png" alt="Question added." width="700"/>
-5. Save your survey by clicking "Save", located to teh top right of the page.
+5. Save your survey by clicking "Save", located to the top right of the page.
 
 ## Question settings
 Every question come with settings, based on the question type, which can change how those questions work. Let's explore this a bit.
