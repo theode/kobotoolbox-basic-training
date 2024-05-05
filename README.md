@@ -13,3 +13,5 @@ Date: 2024-05-05
 # [03: An overview of the KoboToolbox ecosystem](https://htmlpreview.github.io/?https://github.com/theode/kobotoolbox-basic-training/blob/main/02_r_scripts/03-01%20An%20overview%20of%20KoboToolbox.html)
 
 # [04 Building a basic e-form in KoboToolbox](https://htmlpreview.github.io/?https://github.com/theode/kobotoolbox-basic-training/blob/main/02_r_scripts/04%20Building%20a%20basic%20eform.html)
+
+# [05 Getting your form onto a mobile device](https://htmlpreview.github.io/?https://github.com/theode/kobotoolbox-basic-training/blob/main/02_r_scripts/05%20Getting%20your%20form%20onto%20a%20mobile%20device.html)
