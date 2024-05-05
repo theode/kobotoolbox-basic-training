@@ -35,7 +35,7 @@ Do you recall KoboCollect and Enketo? We will be revisiting these.
 
 # Enketo web forms
 
-This is perhaps the easiest part of the course. To get your e-form running we can simply click the **Open** button at the "Collect data" part of the page. This will open the form in a new browser page.
+This is perhaps the easiest part of the course. To get your e-form running we can simply click the **Open** button at the "Collect data" part of the page. This will open the form in a new browser page. If you click on **Copy** this will copy the e-form URL which you can then paste in the address bar of any browser.
 
 <img src="deployed and ready.png" alt="Deployed and ready" width="700"/>
 
@@ -54,7 +54,20 @@ Enketo's web forms can be used in any browser. However, not all browsers are cre
 
 # KoboCollect
 
-This will be a bit more involved. Here are the steps to get started:
+This will be a bit more involved. Firstly you will need to download and install the KoboCollect app on your Android device. Here are the next steps to get started:
 
-1. Download and install the KoboCollect app on your Android device.
-2. ...
+1. Click the **K** on the top right to enter the settings.
+2. Click **Settings**.
+3. Click **Server**.
+4. Enter the URL to your KoboToolbox account.
+
+<img src="KoboCollect basic set up.png" alt="Setting up KoboCollect." width="700"/>
+
+Here is how you can access your e-forms:
+
+1. Click **Download form**.
+2. Select the forms you'd like to download and click **Get selected**.
+3. Back at the home screen, select **Start new form**.
+4. Select the form you want to open to collect your data.
+
+<img src="KoboCollect basic set up 02.png" alt="Setting up KoboCollect." width="700"/>
