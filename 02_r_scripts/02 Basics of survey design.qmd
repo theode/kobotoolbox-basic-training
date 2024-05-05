@@ -37,6 +37,7 @@ knitr:
 # https://researchmethod.net/questionnaire/
 ```
 
+<img src="survey clipart.jpg" alt="Survey question." width="700"/>
 
 # Surveys
 
@@ -134,18 +135,23 @@ Believe it or not, after your survey is designed and your questionnaire is draft
 Pilot-testing the questionnaire helps with this review process. This involves doing mock trials of the interview or self-administered survey. Here are a few things to look out for when reviewing the questionnaire:
 
 - Are respondents willing to answer the questions in the form you propose to use?
-- What are the country-specific response categories?
--	Are any of the questions particularly difficult or sensitive? Do interviewers understand the questions? Extra training can focus on these questions.
--	Do the respondents misinterpret the questions? Are any of the words ambiguous or difficult to understand? The pre-test should point to where changes in wording or improved translation are needed. 
--	Does the questionnaire flow smoothly? Can the interviewers follow the instructions easily? 
--	Is there adequate space on the form and are the answers clearly coded? The pre-test should show where the format needs to be improved before the final questionnaire is printed.
--	Is it necessary to create new codes for common answers that were not included in the original questionnaires?
--	How long does an interview take? The answer to this question will help you decide how many interviewers are needed and how long the fieldwork will take. 
-- Are there any ethical considerations that were overlooked?
-- The appropriateness and feasibility of the sampling method.
-- Whether the questions have been placed in the best order.
-- Whether the questions are understood by all classes of respondent 
-- Whether additional or specifying questions are needed or whether some questions should be eliminated.
-- Whether the instructions to enumerators are adequate.
+- What questions should be made mandatory?
+- What are the country- or region-specific response categories?
+-	Are any of the questions particularly difficult or sensitive? 
+	- Do interviewers understand the questions? 
+	- Extra training can focus on these questions.
+- Do the respondents misinterpret the questions? Are any of the words ambiguous or difficult to understand? 
+	- Are there any questions which require changes in wording or improved translation? 
+	- Are the questions understood by all classes of respondent?
+- Does the questionnaire flow smoothly? 
+	- Are the questions placed in the best order?
+- Can the enumerators follow the instructions easily? 
+	- Are the instructions to enumerators adequate?
 - Whether additional training for enumerators, instrument administrators, experimenters, coders, and data editors are necessary?
-
+- The pre-test should show where the format needs to be improved before the final questionnaire is printed or deployed.
+- Is it necessary to create new options for common answers that were not included in the original questionnaires?
+- How long does an interview take? 
+	- The answer to this question will help you decide how many interviewers are needed and how long the fieldwork will take. 
+- Are there any ethical considerations that were overlooked?
+- Is the sampling method appropriate and feasible?
+- Whether additional or specifying questions are needed or whether some questions should be eliminated.

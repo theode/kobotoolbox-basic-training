@@ -1,0 +1,60 @@
+---
+title: "05 Getting your form onto a mobile device"
+author: "Derrick Theophille"
+date: last-modified
+date-format: "DD MMMM YYYY"
+
+format: 
+  html:
+    toc: true
+    number-sections: true
+    fig_caption: false
+
+execute: 
+  echo: true
+  message: false
+  warning: false
+  
+knitr: 
+  opts_chunk: 
+    comment: false
+    collapse: true
+---
+
+```{r}
+#| label: sources
+#| echo: false
+
+# some-sources
+
+# https://support.kobotoolbox.org/welcome.html
+
+```
+
+Do you recall KoboCollect and Enketo? We will be revisiting these. 
+
+# Enketo web forms
+
+This is perhaps the easiest part of the course. To get your e-form running we can simply click the **Open** button at the "Collect data" part of the page. This will open the form in a new browser page.
+
+<img src="deployed and ready.png" alt="Deployed and ready" width="700"/>
+
+Within the collect data section we can also:
+
+- Choose the options for submission
+- Prevent unauthorised users from submitting data.
+
+## Considerations for using Enketo web forms
+
+Enketo's web forms can be used in any browser. However, not all browsers are created equal. Here are the browsers I recommend for best functionality:
+
+- Microsoft Edge
+- Google Chrome (and most of its offshoots)
+
+
+# KoboCollect
+
+This will be a bit more involved. Here are the steps to get started:
+
+1. Download and install the KoboCollect app on your Android device.
+2. ...

@@ -28,6 +28,8 @@ knitr:
 # some-sources
 
 # https://support.kobotoolbox.org/welcome.html
+# https://support.kobotoolbox.org/new_form.html
+# https://support.kobotoolbox.org/question_types.html
 
 ```
 
@@ -36,8 +38,8 @@ knitr:
 To begin using KoboToolbox you will need to create an account. Here are the steps:
 
 1. Go to <https://www.kobotoolbox.org/>
-2. Click on "Sign up"
-3. Select which server you want to work with. Click "Create an account" for your preferred server.
+2. Click on **"Sign up"**
+3. Select which server you want to work with. Click **"Create an account"** for your preferred server.
 <img src="set up KoboToolbox account.png" alt="Setting up a KoboToolbox account." width="700"/>
 4. Enter in the necessary information to create your account.
 <img src="account details.png" alt="KoboToolbox account details." width="700"/>
@@ -46,13 +48,13 @@ To begin using KoboToolbox you will need to create an account. Here are the step
 <img src="KoboToolbox no projects.png" alt="New KoboToolbox account with no projects." width="700"/>
 
 
-# The web formbuilder
+# Creating a survey project using the web formbuilder
 
 ## Creating a project
 Let's create a project. Remember, your surveys are called projects in KoboToolbox. Here are the steps to get you started:
 
-1. Click on "New".
-2. Click on "Build from scratch"
+1. Click on **"New"**.
+2. Click on **"Build from scratch"**. Notice there are more than one way to create a survey project. For this course we will be using the web formbuilder.
 <img src="KoboToolbox new project.png" alt="New project." width="700"/>
 3. Enter your project details.
 <img src="new project details.png" alt="New project details." width="700"/>
@@ -61,18 +63,70 @@ Let's create a project. Remember, your surveys are called projects in KoboToolbo
 ## Adding questions to your survey
 We add questions to our survey project using the web formbuilder. Here are the steps:
 
-1. Click the plus sign to add a question.
-2. Type in the text to your question. Click "Add question".
+1. Click the **plus sign (+)** to add a question.
+2. Type in the text to your question. Click **"Add question"**.
 3. Select the type of question which suits the text and expected response.
 <img src="add question types.png" alt="Question types." width="700"/>
 4. Your question is now added.
 <img src="question done.png" alt="Question added." width="700"/>
-5. Save your survey by clicking "Save", located to the top right of the page.
+5. Save your survey by clicking **"Save"**, located to the top right of the page.
 
 ## Question settings
 Every question come with settings, based on the question type, which can change how those questions work. Let's explore this a bit.
 
-The settings for a question can be accessed by selecting the cog icon to the right of that question. Notice how the question color changes as the mouse hovers over the various icons. 
+The settings for a question can be accessed by selecting the **cog icon** to the right of that question. Notice how the question colour changes as the mouse hovers over the various icons. 
 <img src="question settings 01.png" alt="Question settings." width="700"/>
 <img src="question settings 02.png" alt="Question settings." width="700"/>
+
+Here are some of the key things to look at while in the settings for your questions:
+
+- **Mandatory response**: This makes your question mandatory if you select **"Yes"**. It is good practice to decide which questions should be mandatory, otherwise you run the risk of receiving blank e-forms from respondents or enumerators.
+- **Appearance**: This controls how your question or its options look.
+- **Skip logic**: This controls how your questions flow from one to the next. For example, you may ask a question which needs a follow-up question based on the option selected as a response to the first question. Skip logic is your friend in these scenarios.
+- **Validation criteria**: This controls what sort of response is valid for your question. For example, you may ask someone what is their age and request a numeric response. By default any number from negative infinity to *positive* infinity is considered appropriate. But is that really the case for human ages? We do not age infinitely nor do we age in reverse. Therefore, you can use the validation criteria settings to set a minimum and maximum valid response for that question, ensuring that the responses are valid for use.
+
+Now, we also have a few other option available to us in the settings:
+
+<img style="float: right;" img src="question setting icons.png" alt="Question settings." width="60"/>
+
+- **Delete question**
+- **Duplicate question**
+- **Add question to library**
+
+## Preview
+
+<img src="question preview 01.png" alt="Question preview." width="700"/>
+
+The web formbuilder has a *preview* feature. With this, it is possible to see what your questionnaire will look like and test how it runs and if the responses are valid. Not all questionnaire functionality is available in the preview, however, but it is still useful for many use cases while developing your questionnaire.
+
+Click the **preview icon (the eye)** near the top right of the page to see the preview.
+
+<img src="question preview 02.png" alt="Question preview." width="700"/>
+
+## Save your survey project
+
+This can never be said enough: **save your project, and save it often as you work!**
+
+After saving you can close the web formbuilder by clicking the **X** next to the save button.
+
+# Deploying your e-form
+
+Now we are ready to share our e-form survey with the world. To do this we need to deploy the project. To deploy tour project click the **"Deploy"** button.
+
+<img src="deploy project.png" alt="Deploy project." width="700"/>
+
+Note the varied options for sharing your form with the world. 
+
+<img src="deploy KoboToolbox form.png" alt="Deploy form in KoboToolbox" width="700"/>
+
+# Hands-on exercise
+
+Should you choose to accept it, you are tasked with creating your first survey project in KoboToolbox, using your new account. Here are the criteria for creating this project:
+
+1. You need at least five (5) questions.
+2. Use at least four (4) different question types.
+3. Make at least one (1) question mandatory.
+4. Add skip logic to at least one (1) question.
+5. Add validation criteria to at least one (1) question.
+6. Explore! Share knowledge! Ask for help! Help each other!
 

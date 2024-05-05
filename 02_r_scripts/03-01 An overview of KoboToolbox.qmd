@@ -108,9 +108,10 @@ The web formbuilder allows for the designing of very basic to fairly complex and
   - and much more.
 
 Additionally, the formbuilder helps you add in many useful features to your forms to ensure high quality data is collected efficiently. These include:
- - skip logic, 
- - validation, 
- - and even language translation.
+ 
+- skip logic, 
+- validation, 
+- and even language translation.
 
 ## Question Library
 
@@ -124,21 +125,24 @@ The question library helps you keep your questions standardized. You can also cr
 
 As previously mentioned, KoboToolbox can be used online or offline for data collection, using virtually any device. In practice this can be done in two ways:
 
-1. **KoboCollect**: This is an Android app which connects to a KoboToolbox server to access eforms, collect data, and submit data. This app is free on Google Play (<https://play.google.com/store/apps/details?id=org.koboc.collect.android>). of course, this option is only available to Android devices or devices which can emulate an Android Operating System.
+1. **KoboCollect**: This is an Android app which connects to a KoboToolbox server to access e-forms, collect data, and submit data, offline and online. This app is free on Google Play (<https://play.google.com/store/apps/details?id=org.koboc.collect.android>). of course, this option is only available to Android devices or devices which can emulate an Android Operating System. 
 <img src="KoboCollect.png" alt="KoboCollect app" width="700"/>
 
-2. **Web forms**: Enketo web forms, an open source software application, is used by KoboToolbox to display and receive responses from your eforms. This option can be used on any device which can run a browser.
+2. **Web forms**: Enketo web forms, an open source software application, is used by KoboToolbox to display e-forrms and receive responses from those e-forms. This option can be used on any device which can run a browser. Enketo's technology allows data to be stored in the browser while you are offline, and submit that data when you regain internet access.
 <img src="enketo_preview_FD FCE.png" alt="Enketo web form in computer browser showing the Fisheries Division's FCE e-form." width="700"/>
 
 ## Data Repository: Management and Reporting
-This is where the data you have collected will be stored and made available for you to access, manage, review. Additionally you may view a pre-made report complete with visualizations. Lastly, you can find your data available for download in several formats (including XLS, CSV, KML, ZIP, and GeoJSON).
+This is where the data you have collected will be stored and made available for you to access, manage, review. Additionally you may view a pre-made report complete with visualizations. Lastly, your data is  available for download in several formats (eg. XLS, CSV, KML, ZIP, and GeoJSON).
 
 <img src="data repository.png" alt="Data repository table" width="700"/>
 
 ## Project (survey) management
 All of the features we've discussed so far is managed within a project in KoboToolbox. This means the questionnaire can be shared with a team for co-development. Or perhaps you need a colleague to assist with validating or editing the incoming data. permissions can be set for each user appropriately, as required for each project or survey. 
 
+::: {.callout-note}
 One more thing you can do here is link projects! Perhaps we will discuss more on this in a future course. :)
+:::
+
 
 <img src="project_management_src-kobo.png" alt="Project management. *Source: Kobo*" width="700"/>
 
@@ -152,6 +156,7 @@ This is how KoboToolbox can fit within your data workflow:
 <img src="deploy KoboToolbox form.png" alt="Deploy form in KoboToolbox" width="700"/>
 4. The e-form is piloted and reviewed, as needed. Both the KoboCollect app and the Enketo web form can be used to see how your enumerators and prospective respondents will use the e-form.
 5. The survey is administered. Records coming in can be monitored in the data repository. Records can be validated (approved, put on hold or not approved) or edited, as needed.
-6. When the survey is done or I need to make a report I can download my data. Or, I can use a more fancy option, such as **R**, to automate the process. :) 
+6. When the survey is done or I need to make a report I can download my data. Or, I can use a more *fancy* option, such as **R**, to automate the process. :) 
 <img src="data download KoboToolbox.png" alt="Data repository download" width="700"/>
 
+<img src="NAIMS plan.png" alt="NAIMS data system plan 2020." width="700"/>

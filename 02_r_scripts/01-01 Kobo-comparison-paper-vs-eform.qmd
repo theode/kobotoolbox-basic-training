@@ -122,7 +122,7 @@ In the case of fisheries, we primarily collect data **to better manage our scarc
 
 In fisheries management we manage our natural resources not by directly managing the living creatures (i.e. fish), but by managing the people who utilize those natural resources. The knowledge needed is derived almost exclusively from fishers or fisheries scientists on or underneath the waves.
 
-[ add pic of fisher with fish on his boat ]
+<img src="fisheries data collection paper.jpg" alt="Fisheries FCE data collection." width="700"/>
 
 However, one can ask "***why*** do we need to better manage those scarce marine resources", and continue asking follow-up questions all the way up to the higher level of societal needs and ideals. 
 
@@ -234,3 +234,4 @@ Several options exist for electronic data collection. A non-exhaustive list incl
 - Open Data Kit (ODK)
 - SurveyCTO
 - **KoboToolbox**
+

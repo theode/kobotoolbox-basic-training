@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Derrick Theophille">
-<meta name="dcterms.date" content="2024-05-04">
+<meta name="dcterms.date" content="2024-05-05">
 
 <title>04 Building a basic e-form in KoboToolbox</title>
 <style>
@@ -48,12 +48,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#creating-an-account-at-kobotoolbox" id="toc-creating-an-account-at-kobotoolbox" class="nav-link active" data-scroll-target="#creating-an-account-at-kobotoolbox"><span class="header-section-number">1</span> Creating an account at KoboToolbox</a></li>
-  <li><a href="#the-web-formbuilder" id="toc-the-web-formbuilder" class="nav-link" data-scroll-target="#the-web-formbuilder"><span class="header-section-number">2</span> The web formbuilder</a>
+  <li><a href="#creating-a-survey-project-using-the-web-formbuilder" id="toc-creating-a-survey-project-using-the-web-formbuilder" class="nav-link" data-scroll-target="#creating-a-survey-project-using-the-web-formbuilder"><span class="header-section-number">2</span> Creating a survey project using the web formbuilder</a>
   <ul class="collapse">
   <li><a href="#creating-a-project" id="toc-creating-a-project" class="nav-link" data-scroll-target="#creating-a-project"><span class="header-section-number">2.1</span> Creating a project</a></li>
   <li><a href="#adding-questions-to-your-survey" id="toc-adding-questions-to-your-survey" class="nav-link" data-scroll-target="#adding-questions-to-your-survey"><span class="header-section-number">2.2</span> Adding questions to your survey</a></li>
   <li><a href="#question-settings" id="toc-question-settings" class="nav-link" data-scroll-target="#question-settings"><span class="header-section-number">2.3</span> Question settings</a></li>
+  <li><a href="#preview" id="toc-preview" class="nav-link" data-scroll-target="#preview"><span class="header-section-number">2.4</span> Preview</a></li>
+  <li><a href="#save-your-survey-project" id="toc-save-your-survey-project" class="nav-link" data-scroll-target="#save-your-survey-project"><span class="header-section-number">2.5</span> Save your survey project</a></li>
   </ul></li>
+  <li><a href="#deploying-your-e-form" id="toc-deploying-your-e-form" class="nav-link" data-scroll-target="#deploying-your-e-form"><span class="header-section-number">3</span> Deploying your e-form</a></li>
+  <li><a href="#hands-on-exercise" id="toc-hands-on-exercise" class="nav-link" data-scroll-target="#hands-on-exercise"><span class="header-section-number">4</span> Hands-on exercise</a></li>
   </ul>
 </nav>
 </div>
@@ -78,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">04 May 2024</p>
+      <p class="date">05 May 2024</p>
     </div>
   </div>
   
@@ -95,21 +99,21 @@ ul.task-list li input[type="checkbox"] {
 <p>To begin using KoboToolbox you will need to create an account. Here are the steps:</p>
 <ol type="1">
 <li>Go to <a href="https://www.kobotoolbox.org/" class="uri">https://www.kobotoolbox.org/</a></li>
-<li>Click on “Sign up”</li>
-<li>Select which server you want to work with. Click “Create an account” for your preferred server. <img src="set up KoboToolbox account.png" alt="Setting up a KoboToolbox account." width="700"></li>
+<li>Click on <strong>“Sign up”</strong></li>
+<li>Select which server you want to work with. Click <strong>“Create an account”</strong> for your preferred server. <img src="set up KoboToolbox account.png" alt="Setting up a KoboToolbox account." width="700"></li>
 <li>Enter in the necessary information to create your account. <img src="account details.png" alt="KoboToolbox account details." width="700"></li>
 <li>Confirm your email address by clicking the activation link in your email.</li>
 <li>Now we are ready to create our first project. <img src="KoboToolbox no projects.png" alt="New KoboToolbox account with no projects." width="700"></li>
 </ol>
 </section>
-<section id="the-web-formbuilder" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> The web formbuilder</h1>
+<section id="creating-a-survey-project-using-the-web-formbuilder" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Creating a survey project using the web formbuilder</h1>
 <section id="creating-a-project" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="creating-a-project"><span class="header-section-number">2.1</span> Creating a project</h2>
 <p>Let’s create a project. Remember, your surveys are called projects in KoboToolbox. Here are the steps to get you started:</p>
 <ol type="1">
-<li>Click on “New”.</li>
-<li>Click on “Build from scratch” <img src="KoboToolbox new project.png" alt="New project." width="700"></li>
+<li>Click on <strong>“New”</strong>.</li>
+<li>Click on <strong>“Build from scratch”</strong>. Notice there are more than one way to create a survey project. For this course we will be using the web formbuilder. <img src="KoboToolbox new project.png" alt="New project." width="700"></li>
 <li>Enter your project details. <img src="new project details.png" alt="New project details." width="700"></li>
 <li>Now we are presented with the web formbuilder.</li>
 </ol>
@@ -118,17 +122,63 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="2.2" class="anchored" data-anchor-id="adding-questions-to-your-survey"><span class="header-section-number">2.2</span> Adding questions to your survey</h2>
 <p>We add questions to our survey project using the web formbuilder. Here are the steps:</p>
 <ol type="1">
-<li>Click the plus sign to add a question.</li>
-<li>Type in the text to your question. Click “Add question”.</li>
+<li>Click the <strong>plus sign (+)</strong> to add a question.</li>
+<li>Type in the text to your question. Click <strong>“Add question”</strong>.</li>
 <li>Select the type of question which suits the text and expected response. <img src="add question types.png" alt="Question types." width="700"></li>
 <li>Your question is now added. <img src="question done.png" alt="Question added." width="700"></li>
+<li>Save your survey by clicking <strong>“Save”</strong>, located to the top right of the page.</li>
 </ol>
 </section>
 <section id="question-settings" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="question-settings"><span class="header-section-number">2.3</span> Question settings</h2>
 <p>Every question come with settings, based on the question type, which can change how those questions work. Let’s explore this a bit.</p>
-<p>The settings for a question can be accessed by selecting the cog icon to the right of that question. Notice how the question color changes as the mouse hovers over the various icons. <img src="question settings 01.png" alt="Question settings." width="700"> <img src="question settings 02.png" alt="Question settings." width="700"></p>
+<p>The settings for a question can be accessed by selecting the <strong>cog icon</strong> to the right of that question. Notice how the question colour changes as the mouse hovers over the various icons. <img src="question settings 01.png" alt="Question settings." width="700"> <img src="question settings 02.png" alt="Question settings." width="700"></p>
+<p>Here are some of the key things to look at while in the settings for your questions:</p>
+<ul>
+<li><strong>Mandatory response</strong>: This makes your question mandatory if you select <strong>“Yes”</strong>. It is good practice to decide which questions should be mandatory, otherwise you run the risk of receiving blank e-forms from respondents or enumerators.</li>
+<li><strong>Appearance</strong>: This controls how your question or its options look.</li>
+<li><strong>Skip logic</strong>: This controls how your questions flow from one to the next. For example, you may ask a question which needs a follow-up question based on the option selected as a response to the first question. Skip logic is your friend in these scenarios.</li>
+<li><strong>Validation criteria</strong>: This controls what sort of response is valid for your question. For example, you may ask someone what is their age and request a numeric response. By default any number from negative infinity to <em>positive</em> infinity is considered appropriate. But is that really the case for human ages? We do not age infinitely nor do we age in reverse. Therefore, you can use the validation criteria settings to set a minimum and maximum valid response for that question, ensuring that the responses are valid for use.</li>
+</ul>
+<p>Now, we also have a few other option available to us in the settings:</p>
+<p><img style="float: right;" img="" src="question setting icons.png" alt="Question settings." width="60"></p>
+<ul>
+<li><strong>Delete question</strong></li>
+<li><strong>Duplicate question</strong></li>
+<li><strong>Add question to library</strong></li>
+</ul>
 </section>
+<section id="preview" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="preview"><span class="header-section-number">2.4</span> Preview</h2>
+<p><img src="question preview 01.png" alt="Question preview." width="700"></p>
+<p>The web formbuilder has a <em>preview</em> feature. With this, it is possible to see what your questionnaire will look like and test how it runs and if the responses are valid. Not all questionnaire functionality is available in the preview, however, but it is still useful for many use cases while developing your questionnaire.</p>
+<p>Click the <strong>preview icon (the eye)</strong> near the top right of the page to see the preview.</p>
+<p><img src="question preview 02.png" alt="Question preview." width="700"></p>
+</section>
+<section id="save-your-survey-project" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="save-your-survey-project"><span class="header-section-number">2.5</span> Save your survey project</h2>
+<p>This can never be said enough: <strong>save your project, and save it often as you work!</strong></p>
+<p>After saving you can close the web formbuilder by clicking the <strong>X</strong> next to the save button.</p>
+</section>
+</section>
+<section id="deploying-your-e-form" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Deploying your e-form</h1>
+<p>Now we are ready to share our e-form survey with the world. To do this we need to deploy the project. To deploy tour project click the <strong>“Deploy”</strong> button.</p>
+<p><img src="deploy project.png" alt="Deploy project." width="700"></p>
+<p>Note the varied options for sharing your form with the world.</p>
+<p><img src="deploy KoboToolbox form.png" alt="Deploy form in KoboToolbox" width="700"></p>
+</section>
+<section id="hands-on-exercise" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Hands-on exercise</h1>
+<p>Should you choose to accept it, you are tasked with creating your first survey project in KoboToolbox, using your new account. Here are the criteria for creating this project:</p>
+<ol type="1">
+<li>You need at least five (5) questions.</li>
+<li>Use at least four (4) different question types.</li>
+<li>Make at least one (1) question mandatory.</li>
+<li>Add skip logic to at least one (1) question.</li>
+<li>Add validation criteria to at least one (1) question.</li>
+<li>Explore! Share knowledge! Ask for help! Help each other!</li>
+</ol>
 </section>
 
 </main>
