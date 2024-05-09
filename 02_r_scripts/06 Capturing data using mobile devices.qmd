@@ -1,5 +1,5 @@
 ---
-title: "06 Using a mobile device to capture data in the field using an e-form"
+title: "06 Using a mobile device to capture data in the field with an e-form"
 author: "Derrick Theophille"
 date: last-modified
 date-format: "DD MMMM YYYY"
@@ -31,9 +31,11 @@ knitr:
 
 ```
 
+<img src="mobile tablet.png" alt="Rugged mobile tablet device." width="500"/>
+
 As you may have noticed, electronic data collection can be used in the work place as well as in the field. We will focus on field data collection in this section.
 
-# Before going on the field
+# Before going on the field (before data collection)
 
 It is good practice to be prepared before going into the field to collect data.
 
@@ -42,17 +44,22 @@ It is good practice to be prepared before going into the field to collect data.
 - If you require additional accessories, supplies, and tools which support your data collection work or your device specifically, make sure those are kept along with your device.
 - If the device uses a case and screen protector for added protection, install those now.
 
-# While on the field
+# While on the field (while collecting data)
 
 - Keep the device and accessories safe and secure, especially when when not in use.
 - Tablets should only be used for data collection activities
 - Never let the device leave your sight. Avoid lending the device to other people.
+- Pay attention to your battery life.
+- If you need to collect geospatial data, ensure that the device's location functionality is turned on and the browser or app being used for data collection has access to that location information captured by your device.
+- Proceed with the e-form as intended and complete the questionnaire, as applicable. Submit the e-form when completed.
 
-# Return from field
+<img src="mobile data collection scene.jpg" alt="Mobile data collection in agriculture." width="500"/>
 
-- Make sure device is cleaned from dirt/soil, liquid, etc
-- Make sure device is put to charge.
-- Make sure device is connected to internet and browser is open for the submission of records.
+# Return from field (after data collection)
+
+- If you were offline while on the field, make sure internet connectivity is restored to the device when back from the field. Open the browser or app and verify that the records submitted have been successfully sent from the device to the KoboToolbox repository. 
+- Clean the device from dirt/soil, liquid, etc.
+- Put the device to charge.
 - Designate a safe place to keep and securely store the devices when not in use. For example in a locked cabinet.
 - Proper care and maintenance should be adhered to at all times.
 

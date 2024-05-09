@@ -1,0 +1,42 @@
+---
+title: "07 Viewing and accessing your data from the KoboToolbox repository"
+author: "Derrick Theophille"
+date: last-modified
+date-format: "DD MMMM YYYY"
+
+format: 
+  html:
+    toc: true
+    number-sections: true
+    fig_caption: false
+
+execute: 
+  echo: true
+  message: false
+  warning: false
+  
+knitr: 
+  opts_chunk: 
+    comment: false
+    collapse: true
+---
+
+```{r}
+#| label: sources
+#| echo: false
+
+# some-sources
+
+# 
+
+```
+
+# Accessing your data on the KoboToolbox repository
+
+We've touched on this before. 
+
+<img src="mobile tablet.png" alt="Rugged mobile tablet device." width="500"/>
+
+As you may have noticed, electronic data collection can be used in the work place as well as in the field. We will focus on field data collection in this section.
+
+# Bef

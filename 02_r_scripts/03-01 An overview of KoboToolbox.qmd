@@ -103,7 +103,7 @@ The web formbuilder allows for the designing of very basic to fairly complex and
   - audio, 
   - video, 
   - geospatial (points, traces or lines, shapes),
-  - barcodes,
+  - barcodes and QR codes,
   - calculations,
   - and much more.
 

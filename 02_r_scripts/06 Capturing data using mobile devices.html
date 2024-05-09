@@ -9,7 +9,7 @@
 <meta name="author" content="Derrick Theophille">
 <meta name="dcterms.date" content="2024-05-08">
 
-<title>03: An overview of the KoboToolbox ecosystem</title>
+<title>06 Using a mobile device to capture data in the field with an e-form</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,16 +25,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="03-01 An overview of KoboToolbox_files/libs/clipboard/clipboard.min.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/quarto.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/popper.min.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="03-01 An overview of KoboToolbox_files/libs/quarto-html/anchor.min.js"></script>
-<link href="03-01 An overview of KoboToolbox_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="03-01 An overview of KoboToolbox_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="03-01 An overview of KoboToolbox_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="03-01 An overview of KoboToolbox_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="03-01 An overview of KoboToolbox_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="06 Capturing data using mobile devices_files/libs/clipboard/clipboard.min.js"></script>
+<script src="06 Capturing data using mobile devices_files/libs/quarto-html/quarto.js"></script>
+<script src="06 Capturing data using mobile devices_files/libs/quarto-html/popper.min.js"></script>
+<script src="06 Capturing data using mobile devices_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="06 Capturing data using mobile devices_files/libs/quarto-html/anchor.min.js"></script>
+<link href="06 Capturing data using mobile devices_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="06 Capturing data using mobile devices_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="06 Capturing data using mobile devices_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="06 Capturing data using mobile devices_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="06 Capturing data using mobile devices_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -47,21 +47,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-kobotoolbox" id="toc-what-is-kobotoolbox" class="nav-link active" data-scroll-target="#what-is-kobotoolbox"><span class="header-section-number">1</span> What is KoboToolbox?</a>
-  <ul class="collapse">
-  <li><a href="#some-background-to-kobotoolbox" id="toc-some-background-to-kobotoolbox" class="nav-link" data-scroll-target="#some-background-to-kobotoolbox"><span class="header-section-number">1.1</span> Some background to KoboToolbox</a></li>
-  <li><a href="#is-kobotoolbox-used-by-other-agencies-closer-to-home" id="toc-is-kobotoolbox-used-by-other-agencies-closer-to-home" class="nav-link" data-scroll-target="#is-kobotoolbox-used-by-other-agencies-closer-to-home"><span class="header-section-number">1.2</span> Is KoboToolbox used by other agencies closer to home?</a></li>
-  <li><a href="#is-kobotoolbox-used-in-dominica" id="toc-is-kobotoolbox-used-in-dominica" class="nav-link" data-scroll-target="#is-kobotoolbox-used-in-dominica"><span class="header-section-number">1.3</span> Is KoboToolbox used in Dominica?</a></li>
-  </ul></li>
-  <li><a href="#kobotoolbox-features" id="toc-kobotoolbox-features" class="nav-link" data-scroll-target="#kobotoolbox-features"><span class="header-section-number">2</span> KoboToolbox Features</a>
-  <ul class="collapse">
-  <li><a href="#web-formbuilder" id="toc-web-formbuilder" class="nav-link" data-scroll-target="#web-formbuilder"><span class="header-section-number">2.1</span> Web Formbuilder</a></li>
-  <li><a href="#question-library" id="toc-question-library" class="nav-link" data-scroll-target="#question-library"><span class="header-section-number">2.2</span> Question Library</a></li>
-  <li><a href="#data-collection-via-mobile-app-or-web-browser" id="toc-data-collection-via-mobile-app-or-web-browser" class="nav-link" data-scroll-target="#data-collection-via-mobile-app-or-web-browser"><span class="header-section-number">2.3</span> Data collection via mobile app or Web browser</a></li>
-  <li><a href="#data-repository-management-and-reporting" id="toc-data-repository-management-and-reporting" class="nav-link" data-scroll-target="#data-repository-management-and-reporting"><span class="header-section-number">2.4</span> Data Repository: Management and Reporting</a></li>
-  <li><a href="#project-survey-management" id="toc-project-survey-management" class="nav-link" data-scroll-target="#project-survey-management"><span class="header-section-number">2.5</span> Project (survey) management</a></li>
-  </ul></li>
-  <li><a href="#the-kobotoolbox-workflow" id="toc-the-kobotoolbox-workflow" class="nav-link" data-scroll-target="#the-kobotoolbox-workflow"><span class="header-section-number">3</span> The KoboToolbox Workflow</a></li>
+  <li><a href="#before-going-on-the-field-before-data-collection" id="toc-before-going-on-the-field-before-data-collection" class="nav-link active" data-scroll-target="#before-going-on-the-field-before-data-collection"><span class="header-section-number">1</span> Before going on the field (before data collection)</a></li>
+  <li><a href="#while-on-the-field-while-collecting-data" id="toc-while-on-the-field-while-collecting-data" class="nav-link" data-scroll-target="#while-on-the-field-while-collecting-data"><span class="header-section-number">2</span> While on the field (while collecting data)</a></li>
+  <li><a href="#return-from-field-after-data-collection" id="toc-return-from-field-after-data-collection" class="nav-link" data-scroll-target="#return-from-field-after-data-collection"><span class="header-section-number">3</span> Return from field (after data collection)</a></li>
+  <li><a href="#recap-and-next-steps" id="toc-recap-and-next-steps" class="nav-link" data-scroll-target="#recap-and-next-steps"><span class="header-section-number">4</span> Recap and next steps</a></li>
   </ul>
 </nav>
 </div>
@@ -69,7 +58,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">03: An overview of the KoboToolbox ecosystem</h1>
+<h1 class="title">06 Using a mobile device to capture data in the field with an e-form</h1>
 </div>
 
 
@@ -98,144 +87,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-is-kobotoolbox" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> What is KoboToolbox?</h1>
-<p><img src="KoBoToolbox-main-webpage.png" alt="KoboToolbox webpage" width="700"></p>
+<p><img src="mobile tablet.png" alt="Rugged mobile tablet device." width="500"></p>
+<p>As you may have noticed, electronic data collection can be used in the work place as well as in the field. We will focus on field data collection in this section.</p>
+<section id="before-going-on-the-field-before-data-collection" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Before going on the field (before data collection)</h1>
+<p>It is good practice to be prepared before going into the field to collect data.</p>
 <ul>
-<li>KoboToolbox is a suite of applications providing an open source data collection tool for working in <strong>“challenging”</strong> environments, such as humanitarian and human rights, global development, and environmental protection cases. But it is not limited to only these areas.</li>
-<li>It is designed to address many of the shortcomings of mobile data collection.</li>
-<li>KoboToolbox lends reliability, accuracy, speed, data quality, analysis and cost effectiveness to mobile data collection.</li>
-<li>Works for data collection <strong>offline</strong> or <strong>online</strong> on virtually any device.</li>
-<li>It is useful for much more than data collection. It can also be used for managing and visualizing collected data.</li>
-<li>Its main features are free to use.</li>
-</ul>
-<p>You can visit the main webpage here: <a href="https://www.kobotoolbox.org" class="uri">https://www.kobotoolbox.org</a></p>
-<section id="some-background-to-kobotoolbox" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="some-background-to-kobotoolbox"><span class="header-section-number">1.1</span> Some background to KoboToolbox</h2>
-<ul>
-<li>KoboToolbox was developed by the <strong>Harvard Humanitarian Initiative</strong> in association with Brigham and Women’s Hospital and USAID.</li>
-<li>KoboToolbox is hosted and maintained by an international nonprofit organisation called <strong>Kobo</strong>, registered in Cambridge Massachusetts, United States. This organisation was established in 2019 to ensure that KoboToolbox could be maintained sustainably for the long-term and develop further.</li>
-<li>Other partners include the United Nations Refugee Agency (UNHCR) and the United Nations Office for the Coordination of Humanitarian Affairs (UN OCHA).</li>
-<li>KoboToolbox is being used by <strong>&gt;14,000</strong> organisations around the world. This includes
-<ul>
-<li>the International Office for Migration (IOM),</li>
-<li>Médecins Sans Frontières (MSF),</li>
-<li>the International Federation of Red Cross and Red Crescent Societies (IFRC),</li>
-<li>the United Nations Children’s Fund (UNICEF),</li>
-<li>Save the Children,</li>
-<li>the African Development Bank,</li>
-<li>the World Bank Group,</li>
-<li>the German Agency for International Cooperation (GIZ),</li>
-<li>Education Above All,</li>
-<li>the United Nations Educational, Scientific and Cultural Organization (UNESCO),</li>
-<li>the World Food Programme (WFP),</li>
-<li>the UN Food and Agriculture Organisation (FAO),</li>
-<li>and the Joint Data Center on Forced Displacement (JDC).</li>
-</ul></li>
+<li>Ensure that the mobile device is fully charged. Depending on device power consumption, you may opt to carry replacement batteries or back-up power sources, based on the device. Or you may choose to carry a second, charged, device.</li>
+<li>Make sure the latest version of the e-form is loaded on to the device. It is also a good idea to test the e-form, while connected to the internet, just to confirm that the e-form is properly loaded.</li>
+<li>If you require additional accessories, supplies, and tools which support your data collection work or your device specifically, make sure those are kept along with your device.</li>
+<li>If the device uses a case and screen protector for added protection, install those now.</li>
 </ul>
 </section>
-<section id="is-kobotoolbox-used-by-other-agencies-closer-to-home" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="is-kobotoolbox-used-by-other-agencies-closer-to-home"><span class="header-section-number">1.2</span> Is KoboToolbox used by other agencies closer to home?</h2>
-<p>Here are a few I personally have worked with:</p>
+<section id="while-on-the-field-while-collecting-data" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> While on the field (while collecting data)</h1>
 <ul>
-<li>University of the West Indies</li>
-<li>Barbados Fisheries Division</li>
-<li>Suriname Fisheries Department</li>
-<li>Saint Lucia Fisheries Department</li>
+<li>Keep the device and accessories safe and secure, especially when when not in use.</li>
+<li>Tablets should only be used for data collection activities</li>
+<li>Never let the device leave your sight. Avoid lending the device to other people.</li>
+<li>Pay attention to your battery life.</li>
+<li>If you need to collect geospatial data, ensure that the device’s location functionality is turned on and the browser or app being used for data collection has access to that location information captured by your device.</li>
+<li>Proceed with the e-form as intended and complete the questionnaire, as applicable. Submit the e-form when completed.</li>
+</ul>
+<p><img src="mobile data collection scene.jpg" alt="Mobile data collection in agriculture." width="500"></p>
+</section>
+<section id="return-from-field-after-data-collection" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Return from field (after data collection)</h1>
+<ul>
+<li>If you were offline while on the field, make sure internet connectivity is restored to the device when back from the field. Open the browser or app and verify that the records submitted have been successfully sent from the device to the KoboToolbox repository.</li>
+<li>Clean the device from dirt/soil, liquid, etc.</li>
+<li>Put the device to charge.</li>
+<li>Designate a safe place to keep and securely store the devices when not in use. For example in a locked cabinet.</li>
+<li>Proper care and maintenance should be adhered to at all times.</li>
 </ul>
 </section>
-<section id="is-kobotoolbox-used-in-dominica" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="is-kobotoolbox-used-in-dominica"><span class="header-section-number">1.3</span> Is KoboToolbox used in Dominica?</h2>
-<p>KoboToolbox has been used and or is being used by these agencies:</p>
+<section id="recap-and-next-steps" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Recap and next steps</h1>
+<p>Let’s recap. So far you have learned:</p>
 <ul>
-<li>Fisheries Division</li>
-<li>Division of Agriculture</li>
-<li>Dominica Emergency Agriculture Livelihoods Climate Resilience Project (EALCRP)</li>
-<li>Information Communication Technology Unit (ICTU)</li>
-<li><em>Physical Planning</em></li>
-<li><em>Environmental Health</em></li>
-<li>Other?</li>
+<li>The importance of data</li>
+<li>The difference between paper and electronic data collection methods</li>
+<li>The basics of designing a survey and developing a good questionnaire</li>
+<li>What is KoboToolbox and been introduced to its features</li>
+<li>How to create a KoboToolbox account, create a basic e-questionnaire and deploy it</li>
+<li>How to use a mobile device for data collection in the field</li>
 </ul>
-</section>
-</section>
-<section id="kobotoolbox-features" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> KoboToolbox Features</h1>
-<section id="web-formbuilder" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="web-formbuilder"><span class="header-section-number">2.1</span> Web Formbuilder</h2>
-<p><img src="formbuilder1_src-kobo.png" alt="Web form builder. *Source: Kobo*" width="700"></p>
-<p>The web formbuilder allows for the designing of very basic to fairly complex and intuitive and <em>powerful</em> electronic forms or questionnaires. It has 25 quantitative and qualitative question types to choose from:</p>
-<ul>
-<li>text (short or long/memo),</li>
-<li>numeric (integer or decimal),</li>
-<li>date and time,</li>
-<li>single- or multi-select,</li>
-<li>ranges,</li>
-<li>ranks,</li>
-<li>images or photos,</li>
-<li>audio,</li>
-<li>video,</li>
-<li>geospatial (points, traces or lines, shapes),</li>
-<li>barcodes and QR codes,</li>
-<li>calculations,</li>
-<li>and much more.</li>
-</ul>
-<p>Additionally, the formbuilder helps you add in many useful features to your forms to ensure high quality data is collected efficiently. These include:</p>
-<ul>
-<li>skip logic,</li>
-<li>validation,</li>
-<li>and even language translation.</li>
-</ul>
-</section>
-<section id="question-library" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="question-library"><span class="header-section-number">2.2</span> Question Library</h2>
-<p><img src="library1_src-kobo.png" alt="Question library. *Source: Kobo*" width="700"></p>
-<p>The question library helps you keep your questions standardized. You can also create templates which can be reused in future forms. Or, you can browse the public collections for question inspirations or simply include them in your questionnaire project.</p>
-</section>
-<section id="data-collection-via-mobile-app-or-web-browser" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="data-collection-via-mobile-app-or-web-browser"><span class="header-section-number">2.3</span> Data collection via mobile app or Web browser</h2>
-<p><img src="enketo1_src-kobo.png" alt="Using Enketo web forms. *Source: Kobo*" width="700"></p>
-<p>As previously mentioned, KoboToolbox can be used online or offline for data collection, using virtually any device. In practice this can be done in two ways:</p>
-<ol type="1">
-<li><p><strong>KoboCollect</strong>: This is an Android app which connects to a KoboToolbox server to access e-forms, collect data, and submit data, offline and online. This app is free on Google Play (<a href="https://play.google.com/store/apps/details?id=org.koboc.collect.android" class="uri">https://play.google.com/store/apps/details?id=org.koboc.collect.android</a>). of course, this option is only available to Android devices or devices which can emulate an Android Operating System. <img src="KoboCollect.png" alt="KoboCollect app" width="700"></p></li>
-<li><p><strong>Web forms</strong>: Enketo web forms, an open source software application, is used by KoboToolbox to display e-forrms and receive responses from those e-forms. This option can be used on any device which can run a browser. Enketo’s technology allows data to be stored in the browser while you are offline, and submit that data when you regain internet access. <img src="enketo_preview_FD FCE.png" alt="Enketo web form in computer browser showing the Fisheries Division's FCE e-form." width="700"></p></li>
-</ol>
-</section>
-<section id="data-repository-management-and-reporting" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="data-repository-management-and-reporting"><span class="header-section-number">2.4</span> Data Repository: Management and Reporting</h2>
-<p>This is where the data you have collected will be stored and made available for you to access, manage, review. Additionally you may view a pre-made report complete with visualizations. Lastly, your data is available for download in several formats (eg. XLS, CSV, KML, ZIP, and GeoJSON).</p>
-<p><img src="data repository.png" alt="Data repository table" width="700"></p>
-</section>
-<section id="project-survey-management" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="project-survey-management"><span class="header-section-number">2.5</span> Project (survey) management</h2>
-<p>All of the features we’ve discussed so far is managed within a project in KoboToolbox. This means the questionnaire can be shared with a team for co-development. Or perhaps you need a colleague to assist with validating or editing the incoming data. permissions can be set for each user appropriately, as required for each project or survey.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>One more thing you can do here is link projects! Perhaps we will discuss more on this in a future course. :)</p>
-</div>
-</div>
-<p><img src="project_management_src-kobo.png" alt="Project management. *Source: Kobo*" width="700"></p>
-</section>
-</section>
-<section id="the-kobotoolbox-workflow" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> The KoboToolbox Workflow</h1>
-<p>This is how KoboToolbox can fit within your data workflow:</p>
-<ol type="1">
-<li>Draft your questionnaire.</li>
-<li>Digitize the questionnaire using the web formbuilder, creating an e-form or e-questionnaire.</li>
-<li>The completed e-form is then deployed for data collection. There are several options for deploying, based on your needs. Restrictions can also be set to prevent unauthorized users from submitting data. <img src="deploy KoboToolbox form.png" alt="Deploy form in KoboToolbox" width="700"></li>
-<li>The e-form is piloted and reviewed, as needed. Both the KoboCollect app and the Enketo web form can be used to see how your enumerators and prospective respondents will use the e-form.</li>
-<li>The survey is administered. Records coming in can be monitored in the data repository. Records can be validated (approved, put on hold or not approved) or edited, as needed.</li>
-<li>When the survey is done or I need to make a report I can download my data. Or, I can use a more <em>fancy</em> option, such as <strong>R</strong>, to automate the process. :) <img src="data download KoboToolbox.png" alt="Data repository download" width="700"></li>
-</ol>
-<p><img src="NAIMS plan.png" alt="NAIMS data system plan 2020." width="700"></p>
+<p>Now what?</p>
 </section>
 
 </main>

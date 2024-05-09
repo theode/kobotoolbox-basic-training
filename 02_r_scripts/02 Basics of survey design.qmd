@@ -85,7 +85,7 @@ In preparation for this section, I learned that questionnaires may have originat
 
 ## Types of questionnaires
 
-Questionnaires come in many flavors. Broadly, these can include:
+Questionnaires come in many flavours. Broadly, these can include:
 
 1. **Structured and close-ended**: The questions are usually closed-ended in a fixed format with predetermined response options. The respondent can only respond with the pre-determined options presented by the enumerator. Allows for the capture of quantitative data.
 2. **Unstructured and open-ended**: The questions are open-ended, not in a fixed format and are not pre-determined. The respondent is encouraged to respond in their own words. Provides a lot of insight into the opinions an attitudes of the respondent, more difficult to analyse and summarize. Allows for the capture of qualitative data.
@@ -112,7 +112,8 @@ Concerning the questions themselves, consider the following:
   - There should be no ambiguity what is being asked and what sort of response is required. 
   - Words and phrases should be precise. 
   - Formatting can be used to place emphasis on key words or phrases (i.e. bold, italics, underlining, capitalization or highlighting). 
-  - Units of measure should be stated. Ask one question at a time.
+  - Units of measure should be stated. 
+  - Ask one question at a time.
 - Questions should be answerable: 
   - Do not ask people for information they do not have. 
   - When in doubt as to whether a question is answerable, you can include the option *"don't know"* as a valid response. 
